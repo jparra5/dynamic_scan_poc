@@ -1,0 +1,16 @@
+01/08/2017 15:50:25     INFO [0001:main] Log: Logs started
+01/08/2017 15:50:28     FINE [0001:main] EncryptionUtils: Initializing FIPS mode (IBM)
+01/08/2017 15:50:28     INFO [0001:main] CommonUtils: Service Version: 1.0.7132
+01/08/2017 15:50:28     INFO [0001:main] CommonUtils: OS name: Linux; version: 4.2.0-27-generic; arch: amd64
+01/08/2017 15:50:28   FINEST [0001:main] HiddenConfig: No hidden config found. Using default settings.
+01/08/2017 15:50:28   FINEST [0001:main] Main: Loading key file AppScanPresence.key
+01/08/2017 15:50:28   FINEST [0001:main] UserConfig: Using user properties file config.properties
+01/08/2017 15:50:28     INFO [0001:main] CommonUtils: User Config:
+01/08/2017 15:50:28     INFO [0001:main] Main: Private Site Server enabled
+01/08/2017 15:50:28     INFO [0001:main] Main: No outgoing proxy configured
+01/08/2017 15:50:28     INFO [0001:main] Main: To change this configuration edit the file config.properties located in the AppScan Presence directory
+01/08/2017 15:50:28     INFO [0001:main] Main: 
+01/08/2017 15:50:28     INFO [0001:main] Main: Connecting to 'IBM Application Security on Cloud'...
+01/08/2017 15:50:28     INFO [0001:main] Main: Initializing agent service soap client
+01/08/2017 15:50:35     INFO [0001:main] (External): Aug 01, 2017 3:50:35 PM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0075: Policy assertion "{http://schemas.xmlsoap.org/ws/2005/07/securitypolicy}TransportBinding" was evaluated as "UNKNOWN".\n
+01/08/2017 15:50:35     INFO [0001:main] (External): Aug 01, 2017 3:50:35 PM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0019: Suboptimal policy alternative selected on the client side with fitness "PARTIALLY_SUPPORTED".\n

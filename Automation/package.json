@@ -1,0 +1,40 @@
+{
+  "name": "dastautomation",
+  "version": "0.1.0",
+  "description": "DASTAutomation",
+  "main": "app.js",
+  "author": {
+    "name": "asafa",
+    "email": ""
+  },
+  "scripts": {
+    "preinstall": "npm set registry https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "apidoc": "0.17.4",
+    "child_process": "1.0.2",
+    "express": "4.13.3",
+    "body-parser": "1.15.2",
+    "fs": "0.0.1-security",
+    "winston": "2.3.0"
+  },
+  "repository": {
+    "type": "registry",
+    "url": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "app.js",
+    "logger.js",
+    "apidocs"
+  ],
+  "apidoc": {
+    "name": "AppScan Proxy Server",
+    "version": "0.1.0",
+    "description": "AppScan Proxy Server allows you to record traffic for a security scan",
+    "title": "AppScan Proxy Server",
+    "url": "http://[server]:[port]/automation",
+    "template": {
+      "forceLanguage": "en"
+    }
+  }
+}

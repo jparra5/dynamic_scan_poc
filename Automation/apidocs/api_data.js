@@ -1,0 +1,254 @@
+define({ "api": [
+  {
+    "version": "0.1.0",
+    "type": "get",
+    "url": "/Certificate",
+    "title": "",
+    "name": "Certificate",
+    "group": "Certificate",
+    "description": "<p>Download the self-signed Root Certificate Authority, used by the AppScan Proxy Server, as a PEM file.</p>",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "file",
+            "optional": false,
+            "field": "Certificate",
+            "description": "<p>file in PEM format</p>"
+          }
+        ]
+      }
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n    \"success\": false         \n    \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./app.js",
+    "groupTitle": "Certificate"
+  },
+  {
+    "version": "0.1.0",
+    "type": "post",
+    "url": "/StartProxy/<port>",
+    "title": "",
+    "name": "StartProxy",
+    "group": "StartProxy",
+    "description": "<p>Start a proxy that listens on the specified port. If port = &quot;0&quot;, a random port will be chosen, and the port number returned in the Response.</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "port",
+            "description": "<p>Proxy listening port</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "chainedProxy",
+            "description": "<p>Configure the upstream (chained) proxy using format [ip]:[port]. This will override the chained proxy rules file (proxy.chain).</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Input",
+          "content": "{\n    \"chainedProxy\": \"1.2.3.4:8080\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "success",
+            "description": "<p>if proxy started</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n    \"success\": true,\n    \"message\": \"\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"success\": false         \n    \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./app.js",
+    "groupTitle": "StartProxy"
+  },
+  {
+    "version": "0.1.0",
+    "type": "get",
+    "url": "/StartProxy/<port>",
+    "title": "",
+    "name": "StartProxy_Simple_",
+    "group": "StartProxy",
+    "description": "<p>Simple API to start a proxy that listens on the specified port. If port = &quot;0&quot;, a random port will be chosen, and the port number returned in the Response.</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "port",
+            "description": "<p>Proxy listening port</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "success",
+            "description": "<p>if proxy started</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n    \"success\": true,\n    \"message\": \"\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"success\": false         \n    \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./app.js",
+    "groupTitle": "StartProxy"
+  },
+  {
+    "version": "0.1.0",
+    "type": "get",
+    "url": "/StopProxy/<port>",
+    "title": "",
+    "name": "StopProxy",
+    "group": "StopProxy",
+    "description": "<p>Stop the proxy that is listening on the specified port</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "port",
+            "description": "<p>Proxy listening port</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "success",
+            "description": "<p>if proxy stopped</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"success\": true,\n  \"message\": \"\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Not Found\n{\n    \"success\": false         \n    \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./app.js",
+    "groupTitle": "StopProxy"
+  },
+  {
+    "version": "0.1.0",
+    "type": "get",
+    "url": "/Traffic/<port>",
+    "title": "",
+    "name": "Traffic",
+    "group": "Traffic",
+    "description": "<p>Download recorded data from the proxy identified by the port as a .dast.config file.</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "port",
+            "description": "<p>Traffic identifier (proxy port)</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "download",
+            "description": "<p>the .config file</p>"
+          }
+        ]
+      }
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 410 Not Found\n{\n    \"success\": false         \n    \"message\": \"error message\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./app.js",
+    "groupTitle": "Traffic"
+  }
+] });

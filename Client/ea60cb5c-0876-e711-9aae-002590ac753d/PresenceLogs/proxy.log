@@ -1,0 +1,21 @@
+0      2017-07-31 10:54:24,990 INFO  impl.DefaultHttpProxyServer - Starting proxy at address: 0.0.0.0/0.0.0.0:40856
+54     2017-07-31 10:54:25,044 INFO  impl.DefaultHttpProxyServer - Proxy listening with TCP transport
+232    2017-07-31 10:54:25,222 INFO  impl.DefaultHttpProxyServer - Proxy started at address: /0:0:0:0:0:0:0:0:40856
+47967  2017-07-31 10:55:12,957 INFO  client.LoggingHostResolver - Connecting to 10.0.2.15:7000 (/10.0.2.15:7000)
+48845  2017-07-31 10:55:13,835 INFO  client.LoggingHostResolver - Connecting to 10.0.2.15:443 (/10.0.2.15:443)
+48933  2017-07-31 10:55:13,923 INFO  impl.ProxyToServerConnection - (CONNECTING) [id: 0x8425abb5]: Connection to upstream server failed
+java.net.ConnectException: Connection refused: /10.0.2.15:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:731)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:545)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:785)
+1997138 2017-07-31 11:27:42,128 INFO  impl.DefaultHttpProxyServer - Shutting down proxy server gracefully
+1997138 2017-07-31 11:27:42,128 INFO  impl.DefaultHttpProxyServer - Closing all channels (graceful)
+1998193 2017-07-31 11:27:43,183 INFO  impl.ServerGroup - Shutting down server group event loops (graceful)
+2000401 2017-07-31 11:27:45,391 INFO  impl.DefaultHttpProxyServer - Done shutting down proxy server

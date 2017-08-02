@@ -1,0 +1,995 @@
+2017-07-28T19:31:12.912Z - info: Automation server is listening on port 8383
+2017-07-28T19:31:26.218Z - info: [8383] StartProxy called
+2017-07-28T19:31:31.979Z - info: logger: FAILED_STARTING_PROXY_PORT_BUSY:Failed to start proxy - the port '8383' is not available
+
+
+2017-07-28T19:31:31.981Z - error: Failed to open proxy on port 8383 with error: Failed to start proxy - the port '8383' is not available
+
+
+2017-07-28T19:31:58.830Z - info: [9000] StartProxy called
+2017-07-28T19:32:04.657Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-28T19:32:04.659Z - info: Succeeded to open proxy on port 9000
+2017-07-28T21:38:05.851Z - info: Automation server is listening on port 8383
+2017-07-28T21:39:10.241Z - info: [9000] StartProxy called
+2017-07-28T21:39:13.031Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-28T21:39:13.034Z - info: Succeeded to open proxy on port 9000
+2017-07-28T21:42:46.647Z - info: [9000] StopProxy called
+2017-07-28T21:42:49.837Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-28T21:42:49.837Z - info: Succeeded to open proxy on port 9000
+2017-07-28T21:42:49.857Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-28T21:42:49.864Z - error: Stopping proxy succeeded (port 9000)
+2017-07-28T21:44:49.474Z - info: [9000] Traffic called
+2017-07-28T21:46:04.132Z - info: [9000] Traffic called
+2017-07-28T21:47:59.497Z - info: [9000] Traffic called
+2017-07-28T21:49:58.715Z - info: [9000] Traffic called
+2017-07-31T15:11:00.904Z - info: Automation server is listening on port 8383
+2017-07-31T15:11:25.547Z - info: [9000] StartProxy called
+2017-07-31T15:11:28.993Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T15:11:28.995Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:12:04.653Z - info: [9000] StopProxy called
+2017-07-31T15:12:07.875Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T15:12:07.875Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:12:07.890Z - info: logger: 
+
+2017-07-31T15:12:07.906Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T15:12:07.913Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T15:12:07.942Z - info: [9000] Traffic called
+2017-07-31T15:17:23.039Z - info: [9000] StartProxy called
+2017-07-31T15:17:25.707Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T15:17:25.708Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:17:58.490Z - info: [9000] StopProxy called
+2017-07-31T15:18:01.581Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T15:18:01.582Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:18:01.583Z - info: logger: 
+
+2017-07-31T15:18:01.595Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T15:18:01.604Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T15:18:01.627Z - info: [9000] Traffic called
+2017-07-31T15:19:42.044Z - info: [9000] StartProxy called
+2017-07-31T15:19:44.742Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T15:19:44.742Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:20:17.284Z - info: [9000] StopProxy called
+2017-07-31T15:20:20.371Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T15:20:20.371Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:20:20.372Z - info: logger: 
+
+2017-07-31T15:20:20.388Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T15:20:20.394Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T15:20:20.420Z - info: [9000] Traffic called
+2017-07-31T15:21:47.615Z - info: [9000] StartProxy called
+2017-07-31T15:21:50.233Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T15:21:50.234Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:22:18.879Z - info: [9000] StopProxy called
+2017-07-31T15:22:21.913Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T15:22:21.913Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:22:21.918Z - info: logger: 
+
+2017-07-31T15:22:21.931Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T15:22:21.940Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T15:22:21.961Z - info: [9000] Traffic called
+2017-07-31T15:24:11.751Z - info: [9000] StartProxy called
+2017-07-31T15:24:14.451Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T15:24:14.453Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:24:43.190Z - info: [9000] StopProxy called
+2017-07-31T15:24:46.269Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T15:24:46.269Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:24:46.272Z - info: logger: 
+
+2017-07-31T15:24:46.289Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T15:24:46.296Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T15:24:46.311Z - info: [9000] Traffic called
+2017-07-31T15:51:19.896Z - info: [9000] StartProxy called
+2017-07-31T15:51:23.226Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T15:51:23.226Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:51:51.457Z - info: [9000] StopProxy called
+2017-07-31T15:51:54.649Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T15:51:54.649Z - info: Succeeded to open proxy on port 9000
+2017-07-31T15:51:54.651Z - info: logger: 
+
+2017-07-31T15:51:54.661Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T15:51:54.672Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T15:51:54.685Z - info: [9000] Traffic called
+2017-07-31T17:28:11.371Z - info: Automation server is listening on port 8383
+2017-07-31T17:30:52.039Z - info: Automation server is listening on port 8383
+2017-07-31T17:30:53.786Z - info: [9000] StartProxy called
+2017-07-31T17:30:59.753Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T17:30:59.755Z - info: Succeeded to open proxy on port 9000
+2017-07-31T17:31:49.590Z - info: Automation server is listening on port 8383
+2017-07-31T17:31:51.383Z - info: [9000] StartProxy called
+2017-07-31T17:31:56.919Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+2017-07-31T17:31:56.923Z - info: Succeeded to open proxy on port 9000
+2017-07-31T17:31:56.931Z - info: logger: 
+
+
+2017-07-31T17:32:31.964Z - info: [9000] StopProxy called
+2017-07-31T17:32:36.086Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T17:32:36.087Z - info: Succeeded to open proxy on port 9000
+2017-07-31T17:32:36.119Z - info: logger: 
+
+2017-07-31T17:32:36.149Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T17:32:36.192Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T17:32:36.212Z - info: [9000] Traffic called
+2017-07-31T17:35:03.443Z - info: [9000] StartProxy called
+2017-07-31T17:35:10.265Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T17:35:10.265Z - info: Succeeded to open proxy on port 9000
+2017-07-31T17:36:38.730Z - info: [9000] StartProxy called
+2017-07-31T17:36:44.042Z - info: logger: FAILED_STARTING_PROXY_PORT_BUSY:Failed to start proxy - the port '9000' is not available
+
+
+2017-07-31T17:36:44.043Z - error: Failed to open proxy on port 9000 with error: Failed to start proxy - the port '9000' is not available
+
+
+2017-07-31T17:37:26.365Z - info: [9000] StartProxy called
+2017-07-31T17:40:13.239Z - info: Automation server is listening on port 8383
+2017-07-31T17:40:14.994Z - info: [9000] StartProxy called
+2017-07-31T17:40:20.639Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T17:40:20.641Z - info: Succeeded to open proxy on port 9000
+2017-07-31T17:40:36.693Z - info: [9000] StopProxy called
+2017-07-31T17:40:41.324Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T17:40:41.325Z - info: Succeeded to open proxy on port 9000
+2017-07-31T17:40:41.357Z - info: logger: 
+
+2017-07-31T17:40:41.379Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T17:40:41.414Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T17:40:41.435Z - info: [9000] Traffic called
+2017-07-31T17:42:08.360Z - info: Automation server is listening on port 8383
+2017-07-31T17:42:13.118Z - info: [9000] StartProxy called
+2017-07-31T17:42:18.634Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T17:42:18.636Z - info: Succeeded to open proxy on port 9000
+2017-07-31T17:42:49.588Z - info: [9000] StopProxy called
+2017-07-31T17:42:53.667Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T17:42:53.669Z - info: Succeeded to open proxy on port 9000
+2017-07-31T17:42:53.767Z - info: logger: 
+
+2017-07-31T17:42:53.768Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T17:42:53.786Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T17:42:53.822Z - info: [9000] Traffic called
+2017-07-31T19:45:48.927Z - info: Automation server is listening on port 8383
+2017-07-31T19:45:52.554Z - info: [9000] StartProxy called
+2017-07-31T19:45:59.230Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:45:59.232Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:45:59.244Z - info: [9000] StopProxy called
+2017-07-31T19:46:02.918Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T19:46:02.919Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:46:02.966Z - info: logger: 
+
+2017-07-31T19:46:02.984Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:46:03.012Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:46:03.015Z - info: [9000] Traffic called
+2017-07-31T19:47:03.699Z - info: [9000] StartProxy called
+2017-07-31T19:47:10.036Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:47:10.036Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:47:10.045Z - info: [9000] StopProxy called
+2017-07-31T19:47:13.706Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T19:47:13.707Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:47:13.708Z - info: logger: 
+
+2017-07-31T19:47:13.735Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:47:13.785Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:47:13.790Z - info: [9000] Traffic called
+2017-07-31T19:48:25.046Z - info: [9000] StartProxy called
+2017-07-31T19:48:30.492Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:48:30.492Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:48:30.498Z - info: [9000] StopProxy called
+2017-07-31T19:48:34.040Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T19:48:34.040Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:48:34.041Z - info: logger: 
+
+2017-07-31T19:48:34.056Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:48:34.100Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:48:34.109Z - info: [9000] Traffic called
+2017-07-31T19:48:54.318Z - info: [9000] StartProxy called
+2017-07-31T19:49:01.547Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:49:01.548Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:49:01.558Z - info: [9000] StopProxy called
+2017-07-31T19:49:05.198Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T19:49:05.198Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:49:05.205Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:49:05.256Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:49:05.259Z - info: [9000] Traffic called
+2017-07-31T19:49:27.569Z - info: [9000] StartProxy called
+2017-07-31T19:49:33.103Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:49:33.104Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:49:33.109Z - info: [9000] StopProxy called
+2017-07-31T19:49:36.809Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T19:49:36.809Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:49:36.810Z - info: logger: 
+
+2017-07-31T19:49:36.819Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:49:36.847Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:49:36.849Z - info: [9000] Traffic called
+2017-07-31T19:51:40.549Z - info: [9000] StartProxy called
+2017-07-31T19:51:45.966Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:51:45.966Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:51:45.976Z - info: [9000] StopProxy called
+2017-07-31T19:51:49.570Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T19:51:49.571Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:51:49.572Z - info: logger: 
+
+2017-07-31T19:51:49.587Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:51:49.622Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:51:49.624Z - info: [9000] Traffic called
+2017-07-31T19:52:16.003Z - info: [9000] StartProxy called
+2017-07-31T19:52:21.487Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:52:21.488Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:52:21.492Z - info: [9000] StopProxy called
+2017-07-31T19:52:25.138Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T19:52:25.138Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:52:25.142Z - info: logger: 
+
+2017-07-31T19:52:25.147Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:52:25.190Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:52:25.193Z - info: [9000] Traffic called
+2017-07-31T19:53:45.834Z - info: [9000] StartProxy called
+2017-07-31T19:53:51.123Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:53:51.130Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:53:57.275Z - info: [9000] StopProxy called
+2017-07-31T19:54:01.257Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T19:54:01.257Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:54:01.278Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:54:01.326Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:54:01.335Z - info: [9000] Traffic called
+2017-07-31T19:55:28.289Z - info: [9000] StartProxy called
+2017-07-31T19:55:33.835Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T19:55:33.836Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:56:04.236Z - info: [9000] StopProxy called
+2017-07-31T19:56:08.276Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T19:56:08.278Z - info: Succeeded to open proxy on port 9000
+2017-07-31T19:56:08.286Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T19:56:08.303Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T19:56:08.306Z - info: [9000] Traffic called
+2017-07-31T20:20:40.372Z - info: [9000] StartProxy called
+2017-07-31T20:20:45.636Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T20:20:45.637Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:21:13.022Z - info: [9000] StopProxy called
+2017-07-31T20:21:16.933Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T20:21:16.934Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:21:16.972Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T20:21:16.995Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T20:21:16.998Z - info: [9000] Traffic called
+2017-07-31T20:23:04.027Z - info: [9000] StartProxy called
+2017-07-31T20:23:10.042Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T20:23:10.043Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:23:36.909Z - info: [9000] StopProxy called
+2017-07-31T20:23:40.479Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T20:23:40.479Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:23:40.480Z - info: logger: 
+
+2017-07-31T20:23:40.491Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T20:23:40.510Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T20:23:40.514Z - info: [9000] Traffic called
+2017-07-31T20:37:07.102Z - info: [9000] StartProxy called
+2017-07-31T20:37:13.151Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T20:37:13.151Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:37:42.449Z - info: [9000] StopProxy called
+2017-07-31T20:37:46.109Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T20:37:46.110Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:37:46.121Z - info: logger: 
+
+2017-07-31T20:37:46.142Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T20:37:46.181Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T20:37:46.190Z - info: [9000] Traffic called
+2017-07-31T20:43:05.040Z - info: [9000] StartProxy called
+2017-07-31T20:43:12.045Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T20:43:12.046Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:43:35.673Z - info: [9000] StopProxy called
+2017-07-31T20:43:39.461Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T20:43:39.462Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:43:39.488Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T20:43:39.531Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T20:43:39.535Z - info: [9000] Traffic called
+2017-07-31T20:49:15.622Z - info: [9000] StartProxy called
+2017-07-31T20:49:22.126Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T20:49:22.126Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:49:45.314Z - info: [9000] StopProxy called
+2017-07-31T20:49:49.096Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T20:49:49.101Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:49:49.114Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T20:49:49.143Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T20:49:49.146Z - info: [9000] Traffic called
+2017-07-31T20:51:34.009Z - info: [9000] StartProxy called
+2017-07-31T20:51:39.905Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T20:51:39.907Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:52:02.833Z - info: [9000] StopProxy called
+2017-07-31T20:52:06.479Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T20:52:06.480Z - info: Succeeded to open proxy on port 9000
+2017-07-31T20:52:06.481Z - info: logger: 
+
+2017-07-31T20:52:06.489Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T20:52:06.537Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T20:52:06.542Z - info: [9000] Traffic called
+2017-07-31T21:33:56.173Z - info: [9000] StartProxy called
+2017-07-31T21:34:02.085Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T21:34:02.086Z - info: Succeeded to open proxy on port 9000
+2017-07-31T21:34:22.840Z - info: [9000] StopProxy called
+2017-07-31T21:34:26.636Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T21:34:26.638Z - info: Succeeded to open proxy on port 9000
+2017-07-31T21:34:26.648Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T21:34:26.665Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T21:34:26.668Z - info: [9000] Traffic called
+2017-07-31T21:37:12.977Z - info: [9000] StartProxy called
+2017-07-31T21:37:19.864Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T21:37:19.865Z - info: Succeeded to open proxy on port 9000
+2017-07-31T21:37:45.112Z - info: [9000] StopProxy called
+2017-07-31T21:37:48.850Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T21:37:48.850Z - info: Succeeded to open proxy on port 9000
+2017-07-31T21:37:48.877Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T21:37:48.898Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T21:37:48.902Z - info: [9000] Traffic called
+2017-07-31T21:39:38.206Z - info: [9000] StartProxy called
+2017-07-31T21:39:44.263Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T21:39:44.265Z - info: Succeeded to open proxy on port 9000
+2017-07-31T21:40:11.109Z - info: [9000] StopProxy called
+2017-07-31T21:40:14.840Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-07-31T21:40:14.841Z - info: Succeeded to open proxy on port 9000
+2017-07-31T21:40:14.842Z - info: logger: 
+
+2017-07-31T21:40:14.855Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T21:40:14.869Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T21:40:14.872Z - info: [9000] Traffic called
+2017-07-31T21:49:58.478Z - info: [9000] StartProxy called
+2017-07-31T21:50:06.226Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-07-31T21:50:06.226Z - info: Succeeded to open proxy on port 9000
+2017-07-31T21:50:25.666Z - info: [9000] StopProxy called
+2017-07-31T21:50:29.460Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-07-31T21:50:29.461Z - info: Succeeded to open proxy on port 9000
+2017-07-31T21:50:29.492Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-07-31T21:50:29.517Z - error: Stopping proxy succeeded (port 9000)
+2017-07-31T21:50:29.523Z - info: [9000] Traffic called
+2017-08-01T15:25:15.203Z - info: Automation server is listening on port 8383
+2017-08-01T15:36:21.213Z - info: [9000] StartProxy called
+2017-08-01T15:36:27.375Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T15:36:27.378Z - info: Succeeded to open proxy on port 9000
+2017-08-01T15:36:55.495Z - info: [9000] StopProxy called
+2017-08-01T15:36:59.559Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-08-01T15:36:59.561Z - info: Succeeded to open proxy on port 9000
+2017-08-01T15:36:59.586Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T15:36:59.599Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T15:36:59.612Z - info: [9000] Traffic called
+2017-08-01T15:38:54.417Z - info: [9000] StartProxy called
+2017-08-01T15:39:00.420Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T15:39:00.420Z - info: Succeeded to open proxy on port 9000
+2017-08-01T15:40:57.413Z - info: [9000] StartProxy called
+2017-08-01T15:41:03.004Z - info: logger: FAILED_STARTING_PROXY_PORT_BUSY:Failed to start proxy - the port '9000' is not available
+2017-08-01T15:41:03.005Z - error: Failed to open proxy on port 9000 with error: Failed to start proxy - the port '9000' is not available
+2017-08-01T15:41:03.027Z - info: logger: 
+
+
+2017-08-01T15:41:28.052Z - info: [9000] StopProxy called
+2017-08-01T15:41:32.520Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-08-01T15:41:32.520Z - info: Succeeded to open proxy on port 9000
+2017-08-01T15:41:32.530Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T15:41:32.545Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T15:41:32.564Z - info: [9000] Traffic called
+2017-08-01T15:42:43.217Z - info: [9000] StartProxy called
+2017-08-01T15:42:48.883Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T15:42:48.883Z - info: Succeeded to open proxy on port 9000
+2017-08-01T15:46:02.126Z - info: [9000] StartProxy called
+2017-08-01T15:46:07.528Z - info: logger: FAILED_STARTING_PROXY_PORT_BUSY:Failed to start proxy - the port '9000' is not available
+2017-08-01T15:46:07.529Z - error: Failed to open proxy on port 9000 with error: Failed to start proxy - the port '9000' is not available
+2017-08-01T15:46:07.543Z - info: logger: 
+
+
+2017-08-01T15:46:57.571Z - info: [9000] StartProxy called
+2017-08-01T15:47:03.206Z - info: logger: FAILED_STARTING_PROXY_PORT_BUSY:Failed to start proxy - the port '9000' is not available
+2017-08-01T15:47:03.206Z - error: Failed to open proxy on port 9000 with error: Failed to start proxy - the port '9000' is not available
+2017-08-01T15:47:03.212Z - info: logger: 
+
+
+2017-08-01T15:51:31.614Z - info: [9000] StartProxy called
+2017-08-01T15:51:37.242Z - info: logger: FAILED_STARTING_PROXY_PORT_BUSY:Failed to start proxy - the port '9000' is not available
+
+
+2017-08-01T15:51:37.245Z - error: Failed to open proxy on port 9000 with error: Failed to start proxy - the port '9000' is not available
+
+
+2017-08-01T15:58:04.432Z - info: Automation server is listening on port 8383
+2017-08-01T15:58:15.744Z - info: [9000] StartProxy called
+2017-08-01T15:58:21.529Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T15:58:21.531Z - info: Succeeded to open proxy on port 9000
+2017-08-01T15:58:54.851Z - info: [9000] StopProxy called
+2017-08-01T15:58:59.746Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T15:58:59.746Z - info: Succeeded to open proxy on port 9000
+2017-08-01T15:58:59.777Z - info: logger: 
+
+2017-08-01T15:58:59.800Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T15:58:59.840Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T15:58:59.852Z - info: [9000] Traffic called
+2017-08-01T15:59:32.528Z - info: [9000] StartProxy called
+2017-08-01T15:59:38.712Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T15:59:38.712Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:00:58.246Z - info: [9000] StopProxy called
+2017-08-01T16:01:02.313Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T16:01:02.314Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:01:02.315Z - info: logger: 
+
+2017-08-01T16:01:02.326Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T16:01:02.344Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T16:01:02.354Z - info: [9000] Traffic called
+2017-08-01T16:03:11.573Z - info: [9000] StartProxy called
+2017-08-01T16:03:17.268Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T16:03:17.268Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:04:32.465Z - info: [9000] StopProxy called
+2017-08-01T16:04:36.347Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T16:04:36.347Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:04:36.349Z - info: logger: 
+
+2017-08-01T16:04:36.366Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T16:04:36.388Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T16:04:36.392Z - info: [9000] Traffic called
+2017-08-01T16:06:36.310Z - info: [9000] StartProxy called
+2017-08-01T16:06:42.211Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T16:06:42.211Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:07:59.023Z - info: [9000] StopProxy called
+2017-08-01T16:08:03.018Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T16:08:03.019Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:08:03.020Z - info: logger: 
+
+2017-08-01T16:08:03.038Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T16:08:03.055Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T16:08:03.060Z - info: [9000] Traffic called
+2017-08-01T16:09:39.817Z - info: [9000] StartProxy called
+2017-08-01T16:09:45.522Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T16:09:45.523Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:11:03.967Z - info: [9000] StopProxy called
+2017-08-01T16:11:08.009Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T16:11:08.021Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:11:08.026Z - info: logger: 
+
+2017-08-01T16:11:08.032Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T16:11:08.046Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T16:11:08.051Z - info: [9000] Traffic called
+2017-08-01T16:40:30.214Z - info: [9000] StartProxy called
+2017-08-01T16:40:37.089Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T16:40:37.089Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:41:58.526Z - info: [9000] StopProxy called
+2017-08-01T16:42:02.863Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-08-01T16:42:02.864Z - info: Succeeded to open proxy on port 9000
+2017-08-01T16:42:02.877Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T16:42:02.900Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T16:42:02.904Z - info: [9000] Traffic called
+2017-08-01T17:18:59.635Z - info: [9000] StartProxy called
+2017-08-01T17:19:06.386Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T17:19:06.387Z - info: Succeeded to open proxy on port 9000
+2017-08-01T17:19:39.950Z - info: [9000] StopProxy called
+2017-08-01T17:19:44.030Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-08-01T17:19:44.030Z - info: Succeeded to open proxy on port 9000
+2017-08-01T17:19:44.048Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T17:19:44.065Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T17:19:44.070Z - info: [9000] Traffic called
+2017-08-01T17:50:29.376Z - info: [9000] StartProxy called
+2017-08-01T17:50:35.087Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T17:50:35.087Z - info: Succeeded to open proxy on port 9000
+2017-08-01T17:51:51.609Z - info: [9000] StopProxy called
+2017-08-01T17:51:56.094Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-08-01T17:51:56.094Z - info: Succeeded to open proxy on port 9000
+2017-08-01T17:51:56.124Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T17:51:56.179Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T17:51:56.181Z - info: [9000] Traffic called
+2017-08-01T19:53:39.560Z - info: Automation server is listening on port 8383
+2017-08-01T19:54:24.667Z - info: Automation server is listening on port 8383
+2017-08-01T19:54:48.019Z - info: Automation server is listening on port 8383
+2017-08-01T20:00:11.378Z - info: Automation server is listening on port 8383
+2017-08-01T20:01:22.883Z - info: Automation server is listening on port 8383
+2017-08-01T20:02:36.860Z - info: Automation server is listening on port 8383
+2017-08-01T20:02:41.655Z - info: [9000] StartProxy called
+2017-08-01T20:02:47.735Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T20:02:47.737Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:03:20.925Z - info: [9000] StopProxy called
+2017-08-01T20:03:24.891Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T20:03:24.892Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:03:24.902Z - info: logger: 
+
+2017-08-01T20:03:24.910Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T20:03:24.925Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T20:03:24.928Z - info: [9000] Traffic called
+2017-08-01T20:11:38.325Z - info: Automation server is listening on port 8383
+2017-08-01T20:11:43.105Z - info: [9000] StartProxy called
+2017-08-01T20:11:49.598Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T20:11:49.600Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:13:45.338Z - info: [9000] StopProxy called
+2017-08-01T20:13:49.629Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T20:13:49.629Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:13:49.651Z - info: logger: 
+
+2017-08-01T20:13:49.655Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T20:13:49.668Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T20:13:49.672Z - info: [9000] Traffic called
+2017-08-01T20:23:10.842Z - info: Automation server is listening on port 8383
+2017-08-01T20:25:12.115Z - info: Automation server is listening on port 8383
+2017-08-01T20:25:16.899Z - info: [9000] StartProxy called
+2017-08-01T20:25:23.314Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T20:25:23.316Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:27:14.649Z - info: [9000] StopProxy called
+2017-08-01T20:27:18.432Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T20:27:18.432Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:27:18.445Z - info: logger: 
+
+2017-08-01T20:27:18.451Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T20:27:18.465Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T20:27:18.469Z - info: [9000] Traffic called
+2017-08-01T20:31:27.553Z - info: Automation server is listening on port 8383
+2017-08-01T20:31:37.352Z - info: [9000] StartProxy called
+2017-08-01T20:31:42.771Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T20:31:42.772Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:32:14.343Z - info: [9000] StopProxy called
+2017-08-01T20:32:18.423Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T20:32:18.423Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:32:18.437Z - info: logger: 
+
+2017-08-01T20:32:18.444Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T20:32:18.461Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T20:32:18.464Z - info: [9000] Traffic called
+2017-08-01T20:33:04.392Z - info: Automation server is listening on port 8383
+2017-08-01T20:33:14.199Z - info: [9000] StartProxy called
+2017-08-01T20:33:20.208Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T20:33:20.210Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:33:50.333Z - info: [9000] StopProxy called
+2017-08-01T20:33:54.171Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-08-01T20:33:54.173Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:33:54.210Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T20:33:54.213Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T20:33:54.220Z - info: [9000] Traffic called
+2017-08-01T20:41:57.734Z - info: Automation server is listening on port 8383
+2017-08-01T20:42:07.516Z - info: [9000] StartProxy called
+2017-08-01T20:42:14.225Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T20:42:14.228Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:42:43.032Z - info: [9000] StopProxy called
+2017-08-01T20:42:47.003Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-08-01T20:42:47.005Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:42:47.057Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T20:42:47.096Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T20:42:47.100Z - info: [9000] Traffic called
+2017-08-01T20:43:24.017Z - info: Automation server is listening on port 8383
+2017-08-01T20:43:33.795Z - info: [9000] StartProxy called
+2017-08-01T20:43:39.509Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T20:43:39.511Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:44:10.943Z - info: [9000] StopProxy called
+2017-08-01T20:44:14.876Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T20:44:14.877Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:44:14.889Z - info: logger: 
+
+2017-08-01T20:44:14.911Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T20:44:14.953Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T20:44:14.961Z - info: [9000] Traffic called
+2017-08-01T20:53:54.281Z - info: Automation server is listening on port 8383
+2017-08-01T20:54:55.744Z - info: Automation server is listening on port 8383
+2017-08-01T20:55:05.356Z - info: [9000] StartProxy called
+2017-08-01T20:55:11.068Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T20:55:11.072Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:55:42.581Z - info: [9000] StopProxy called
+2017-08-01T20:55:46.426Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T20:55:46.426Z - info: Succeeded to open proxy on port 9000
+2017-08-01T20:55:46.453Z - info: logger: 
+
+2017-08-01T20:55:46.475Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T20:55:46.520Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T20:55:46.527Z - info: [9000] Traffic called
+2017-08-01T21:08:19.507Z - info: Automation server is listening on port 8383
+2017-08-01T21:08:29.090Z - info: [9000] StartProxy called
+2017-08-01T21:08:34.659Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T21:08:34.661Z - info: Succeeded to open proxy on port 9000
+2017-08-01T21:09:06.432Z - info: [9000] StopProxy called
+2017-08-01T21:09:10.377Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T21:09:10.378Z - info: Succeeded to open proxy on port 9000
+2017-08-01T21:09:10.391Z - info: logger: 
+
+2017-08-01T21:09:10.417Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T21:09:10.464Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T21:09:10.484Z - info: [9000] Traffic called
+2017-08-01T21:13:23.132Z - info: Automation server is listening on port 8383
+2017-08-01T21:39:20.385Z - info: Automation server is listening on port 8383
+2017-08-01T21:41:20.829Z - info: Automation server is listening on port 8383
+2017-08-01T21:42:42.024Z - info: Automation server is listening on port 8383
+2017-08-01T21:43:22.302Z - info: Automation server is listening on port 8383
+2017-08-01T21:44:09.343Z - info: Automation server is listening on port 8383
+2017-08-01T21:49:25.257Z - info: Automation server is listening on port 8383
+2017-08-01T21:51:14.553Z - info: Automation server is listening on port 8383
+2017-08-01T21:54:33.699Z - info: Automation server is listening on port 8383
+2017-08-01T21:54:43.170Z - info: [9000] StartProxy called
+2017-08-01T21:54:48.706Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T21:54:48.708Z - info: Succeeded to open proxy on port 9000
+2017-08-01T21:55:21.139Z - info: [9000] StopProxy called
+2017-08-01T21:55:24.896Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T21:55:24.896Z - info: Succeeded to open proxy on port 9000
+2017-08-01T21:55:24.912Z - info: logger: 
+
+2017-08-01T21:55:24.930Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T21:55:24.977Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T21:55:24.986Z - info: [9000] Traffic called
+2017-08-01T22:19:58.461Z - info: Automation server is listening on port 8383
+2017-08-01T22:20:08.027Z - info: [9000] StartProxy called
+2017-08-01T22:20:14.579Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-01T22:20:14.581Z - info: Succeeded to open proxy on port 9000
+2017-08-01T22:20:54.739Z - info: [9000] StopProxy called
+2017-08-01T22:20:58.714Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-01T22:20:58.714Z - info: Succeeded to open proxy on port 9000
+2017-08-01T22:20:58.751Z - info: logger: 
+
+2017-08-01T22:20:58.766Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-01T22:20:58.815Z - error: Stopping proxy succeeded (port 9000)
+2017-08-01T22:20:58.825Z - info: [9000] Traffic called
+2017-08-02T14:38:38.010Z - info: Automation server is listening on port 8383
+2017-08-02T14:38:47.468Z - info: [9000] StartProxy called
+2017-08-02T14:38:54.315Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T14:38:54.328Z - info: Succeeded to open proxy on port 9000
+2017-08-02T14:40:19.211Z - info: [9000] StopProxy called
+2017-08-02T14:40:23.432Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T14:40:23.434Z - info: Succeeded to open proxy on port 9000
+2017-08-02T14:40:23.465Z - info: logger: 
+
+2017-08-02T14:40:23.492Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T14:40:23.521Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T14:40:23.529Z - info: [9000] Traffic called
+2017-08-02T15:23:01.982Z - info: Automation server is listening on port 8383
+2017-08-02T15:32:18.853Z - info: Automation server is listening on port 8383
+2017-08-02T15:32:28.408Z - info: [9000] StartProxy called
+2017-08-02T15:32:35.630Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+2017-08-02T15:32:35.633Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:32:35.637Z - info: logger: 
+
+
+2017-08-02T15:33:03.329Z - info: [9000] StopProxy called
+2017-08-02T15:33:07.657Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T15:33:07.658Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:33:07.682Z - info: logger: 
+
+2017-08-02T15:33:07.700Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T15:33:07.735Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T15:33:07.740Z - info: [9000] Traffic called
+2017-08-02T15:33:38.264Z - info: Automation server is listening on port 8383
+2017-08-02T15:33:47.821Z - info: [9000] StartProxy called
+2017-08-02T15:33:53.218Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T15:33:53.222Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:35:04.185Z - info: [9000] StopProxy called
+2017-08-02T15:35:07.872Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T15:35:07.872Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:35:07.901Z - info: logger: 
+
+2017-08-02T15:35:07.927Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T15:35:07.962Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T15:35:07.972Z - info: [9000] Traffic called
+2017-08-02T15:35:38.118Z - info: Automation server is listening on port 8383
+2017-08-02T15:35:47.752Z - info: [9000] StartProxy called
+2017-08-02T15:35:53.206Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T15:35:53.209Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:36:24.115Z - info: [9000] StopProxy called
+2017-08-02T15:36:27.829Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T15:36:27.829Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:36:27.844Z - info: logger: 
+
+2017-08-02T15:36:27.863Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T15:36:27.921Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T15:36:27.925Z - info: [9000] Traffic called
+2017-08-02T15:38:40.293Z - info: Automation server is listening on port 8383
+2017-08-02T15:38:49.905Z - info: [9000] StartProxy called
+2017-08-02T15:38:55.396Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T15:38:55.399Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:39:27.792Z - info: [9000] StopProxy called
+2017-08-02T15:39:31.705Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T15:39:31.705Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:39:31.732Z - info: logger: 
+
+2017-08-02T15:39:31.767Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T15:39:31.799Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T15:39:31.812Z - info: [9000] Traffic called
+2017-08-02T15:48:37.736Z - info: Automation server is listening on port 8383
+2017-08-02T15:48:47.324Z - info: [9000] StartProxy called
+2017-08-02T15:48:52.878Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T15:48:52.881Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:49:01.894Z - info: [9000] StopProxy called
+2017-08-02T15:49:05.590Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T15:49:05.590Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:49:05.615Z - info: logger: 
+
+2017-08-02T15:49:05.658Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T15:49:05.689Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T15:49:05.698Z - info: [9000] Traffic called
+2017-08-02T15:53:17.482Z - info: Automation server is listening on port 8383
+2017-08-02T15:53:27.066Z - info: [9000] StartProxy called
+2017-08-02T15:53:32.767Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T15:53:32.769Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:53:37.235Z - info: [9000] StopProxy called
+2017-08-02T15:53:41.004Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T15:53:41.004Z - info: Succeeded to open proxy on port 9000
+2017-08-02T15:53:41.040Z - info: logger: 
+
+2017-08-02T15:53:41.076Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T15:53:41.105Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T15:53:41.118Z - info: [9000] Traffic called
+2017-08-02T16:55:50.286Z - info: Automation server is listening on port 8383
+2017-08-02T16:55:59.812Z - info: [9000] StartProxy called
+2017-08-02T16:56:07.163Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T16:56:07.171Z - info: Succeeded to open proxy on port 9000
+2017-08-02T16:56:53.952Z - info: [9000] StopProxy called
+2017-08-02T16:56:57.570Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T16:56:57.571Z - info: Succeeded to open proxy on port 9000
+2017-08-02T16:56:57.603Z - info: logger: 
+
+2017-08-02T16:56:57.629Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T16:56:57.698Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T16:56:57.704Z - info: [9000] Traffic called
+2017-08-02T16:57:42.464Z - info: Automation server is listening on port 8383
+2017-08-02T16:57:52.013Z - info: [9000] StartProxy called
+2017-08-02T16:57:57.703Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T16:57:57.705Z - info: Succeeded to open proxy on port 9000
+2017-08-02T16:58:57.394Z - info: [9000] StopProxy called
+2017-08-02T16:59:01.108Z - info: logger: SUCCESS:proxy has been stopped successfully
+2017-08-02T16:59:01.109Z - info: Succeeded to open proxy on port 9000
+2017-08-02T16:59:01.137Z - info: logger: 
+
+2017-08-02T16:59:01.169Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T16:59:01.207Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T16:59:01.216Z - info: [9000] Traffic called
+2017-08-02T17:00:06.009Z - info: Automation server is listening on port 8383
+2017-08-02T17:00:15.571Z - info: [9000] StartProxy called
+2017-08-02T17:00:21.290Z - info: logger: SUCCESS:Proxy has started and is listening on port=9000
+
+
+2017-08-02T17:00:21.292Z - info: Succeeded to open proxy on port 9000
+2017-08-02T17:01:17.220Z - info: [9000] StopProxy called
+2017-08-02T17:01:21.145Z - info: logger: SUCCESS:proxy has been stopped successfully
+
+2017-08-02T17:01:21.145Z - info: Succeeded to open proxy on port 9000
+2017-08-02T17:01:21.165Z - info: SUCCESS:Proxy on port '9000' has been stopped successfully
+
+
+2017-08-02T17:01:21.211Z - error: Stopping proxy succeeded (port 9000)
+2017-08-02T17:01:21.219Z - info: [9000] Traffic called

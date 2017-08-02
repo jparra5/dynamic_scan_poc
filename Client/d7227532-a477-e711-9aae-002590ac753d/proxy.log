@@ -1,0 +1,4 @@
+0      2017-08-02 12:02:49,290 INFO  impl.DefaultHttpProxyServer - Starting proxy at address: 0.0.0.0/0.0.0.0:41123
+30     2017-08-02 12:02:49,320 INFO  impl.DefaultHttpProxyServer - Proxy listening with TCP transport
+151    2017-08-02 12:02:49,441 INFO  impl.DefaultHttpProxyServer - Proxy started at address: /0:0:0:0:0:0:0:0:41123
+46308  2017-08-02 12:03:35,598 INFO  client.LoggingHostResolver - Connecting to dev-dlms.stage1.ng.bluemix.net:443 (dev-dlms.stage1.ng.bluemix.net/9.66.242.5:443)

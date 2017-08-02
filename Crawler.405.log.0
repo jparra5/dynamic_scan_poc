@@ -1,0 +1,34 @@
+31/07/2017 11:28:29     INFO [0001:main] Log: Logs started
+31/07/2017 11:28:32     FINE [0001:main] EncryptionUtils: Initializing FIPS mode (IBM)
+31/07/2017 11:28:32     INFO [0001:main] CommonUtils: Service Version: 1.0.7132
+31/07/2017 11:28:32     INFO [0001:main] CommonUtils: OS name: Linux; version: 4.2.0-27-generic; arch: amd64
+31/07/2017 11:28:32   FINEST [0001:main] HiddenConfig: No hidden config found. Using default settings.
+31/07/2017 11:28:32   FINEST [0001:main] Main: Loading key file AppScanPresence.key
+31/07/2017 11:28:32   FINEST [0001:main] UserConfig: Using user properties file config.properties
+31/07/2017 11:28:32     INFO [0001:main] CommonUtils: User Config:
+31/07/2017 11:28:32     INFO [0001:main] Main: Private Site Server enabled
+31/07/2017 11:28:32     INFO [0001:main] Main: No outgoing proxy configured
+31/07/2017 11:28:32     INFO [0001:main] Main: To change this configuration edit the file config.properties located in the AppScan Presence directory
+31/07/2017 11:28:32     INFO [0001:main] Main: 
+31/07/2017 11:28:32     INFO [0001:main] Main: Connecting to 'IBM Application Security on Cloud'...
+31/07/2017 11:28:32     INFO [0001:main] Main: Initializing agent service soap client
+31/07/2017 11:28:35     INFO [0001:main] (External): Jul 31, 2017 11:28:35 AM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0075: Policy assertion "{http://schemas.xmlsoap.org/ws/2005/07/securitypolicy}TransportBinding" was evaluated as "UNKNOWN".\n
+31/07/2017 11:28:35     INFO [0001:main] (External): Jul 31, 2017 11:28:35 AM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0019: Suboptimal policy alternative selected on the client side with fitness "PARTIALLY_SUPPORTED".\n
+31/07/2017 11:28:35     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:28:35     INFO [0001:main] CommonUtils: IP Address is: /10.0.2.15
+31/07/2017 11:28:35     INFO [0001:main] TasksHandlerImpl: Registering agent j-VirtualBox:10.0.2.15
+31/07/2017 11:28:36     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:28:36     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 11:28:37     INFO [0001:main] Main: Successfully connected to 'IBM Application Security on Cloud'
+31/07/2017 11:28:37     INFO [0001:main] Main: You can now return to 'IBM Application Security on Cloud' and complete scan configuration.
+31/07/2017 11:28:37     INFO [0001:main] Main: To terminate the AppScan Presence program, press Ctrl+C.
+31/07/2017 11:30:40     INFO [0001:main] TasksHandlerImpl: Received task START_TUNNEL with data '27f09567-0d76-e711-9aae-002590ac753d'
+31/07/2017 11:30:40     INFO [0001:main] TasksHandlerImpl: Starting Tunnel Client '208.43.25.45:443'
+31/07/2017 11:30:40     INFO [0001:main] TasksHandlerImpl: Opening tunnel connection for scan "9000.dast" with starting URL: http://10.0.2.15:7000
+31/07/2017 11:30:40     INFO [0001:main] TunnelClientWrapperImpl: Creating client output directory: /home/j/Downloads/AppScanPresence-Linux_x86_64/Client/27f09567-0d76-e711-9aae-002590ac753d
+31/07/2017 11:30:40   SEVERE [0001:main] TunnelClientWrapperImpl: Failed starting tunnel client. Exception: java.io.IOException: Directory 'Client/27f09567-0d76-e711-9aae-002590ac753d' could not be created\n	at org.apache.commons.io.FileUtils.openOutputStream(FileUtils.java:363)\n	at org.apache.commons.io.FileUtils.writeByteArrayToFile(FileUtils.java:2094)\n	at org.apache.commons.io.FileUtils.writeByteArrayToFile(FileUtils.java:2078)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.startTunnelClient(TunnelClientWrapperImpl.java:87)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:154)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\n
+31/07/2017 11:30:40     INFO [0001:main] TasksHandlerImpl: Tunnel client failed to start
+31/07/2017 11:33:45     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 11:33:45     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 11:33:45     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:33:45     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176

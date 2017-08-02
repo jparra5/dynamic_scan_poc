@@ -1,0 +1,240 @@
+31/07/2017 10:34:28     INFO [0001:main] Log: Logs started
+31/07/2017 10:34:30     FINE [0001:main] EncryptionUtils: Initializing FIPS mode (IBM)
+31/07/2017 10:34:30     INFO [0001:main] CommonUtils: Service Version: 1.0.7132
+31/07/2017 10:34:30     INFO [0001:main] CommonUtils: OS name: Linux; version: 4.2.0-27-generic; arch: amd64
+31/07/2017 10:34:30   FINEST [0001:main] HiddenConfig: No hidden config found. Using default settings.
+31/07/2017 10:34:30   FINEST [0001:main] Main: Loading key file AppScanPresence.key
+31/07/2017 10:34:31   FINEST [0001:main] UserConfig: Using user properties file config.properties
+31/07/2017 10:34:31     INFO [0001:main] CommonUtils: User Config:
+31/07/2017 10:34:31     INFO [0001:main] Main: Private Site Server enabled
+31/07/2017 10:34:31     INFO [0001:main] Main: No outgoing proxy configured
+31/07/2017 10:34:31     INFO [0001:main] Main: To change this configuration edit the file config.properties located in the AppScan Presence directory
+31/07/2017 10:34:31     INFO [0001:main] Main: 
+31/07/2017 10:34:31     INFO [0001:main] Main: Connecting to 'IBM Application Security on Cloud'...
+31/07/2017 10:34:31     INFO [0001:main] Main: Initializing agent service soap client
+31/07/2017 10:34:32     INFO [0001:main] (External): Jul 31, 2017 10:34:32 AM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0075: Policy assertion "{http://schemas.xmlsoap.org/ws/2005/07/securitypolicy}TransportBinding" was evaluated as "UNKNOWN".\n
+31/07/2017 10:34:32     INFO [0001:main] (External): Jul 31, 2017 10:34:32 AM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0019: Suboptimal policy alternative selected on the client side with fitness "PARTIALLY_SUPPORTED".\n
+31/07/2017 10:34:33     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 10:34:33     INFO [0001:main] CommonUtils: IP Address is: /10.0.2.15
+31/07/2017 10:34:33     INFO [0001:main] TasksHandlerImpl: Registering agent j-VirtualBox:10.0.2.15
+31/07/2017 10:34:33     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 10:34:33     INFO [0001:main] AgentDataImpl: Tunnel Client jar not found, using default version 9.9.999
+31/07/2017 10:34:34     INFO [0001:main] TasksHandlerImpl: Received task UPDATE_AGENT with data 'Tunnel'
+31/07/2017 10:34:34     INFO [0001:main] TasksHandlerImpl: Updating agent
+31/07/2017 10:34:41     INFO [0001:main] UpdatesManagerImpl: Updating component at: /home/j/Downloads/AppScanPresence-Linux_x86_64/Client
+31/07/2017 10:34:41     INFO [0001:main] UpdatesManagerImpl: Component updated successfully
+31/07/2017 10:34:41     INFO [0001:main] Main: Successfully connected to 'IBM Application Security on Cloud'
+31/07/2017 10:34:41     INFO [0001:main] Main: You can now return to 'IBM Application Security on Cloud' and complete scan configuration.
+31/07/2017 10:34:41     INFO [0001:main] Main: To terminate the AppScan Presence program, press Ctrl+C.
+31/07/2017 10:34:57     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 10:34:57     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 10:34:57     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 10:34:57     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 10:39:09     INFO [0001:main] TasksHandlerImpl: Received task START_TUNNEL with data '9135ba47-0676-e711-9aae-002590ac753d'
+31/07/2017 10:39:09     INFO [0001:main] TasksHandlerImpl: Starting Tunnel Client '208.43.25.43:443'
+31/07/2017 10:39:09     INFO [0001:main] TasksHandlerImpl: Opening tunnel connection for scan "10.0.2.15" with starting URL: http://10.0.2.15:7000
+31/07/2017 10:39:09     INFO [0001:main] TunnelClientWrapperImpl: Creating client output directory: /home/j/Downloads/AppScanPresence-Linux_x86_64/Client/9135ba47-0676-e711-9aae-002590ac753d
+31/07/2017 10:39:09   FINEST [0001:main] ProcessUtils: Starting process: '/home/j/Downloads/AppScanPresence-Linux_x86_64/java/jre/bin/java -jar ../TunnelClient.jar -remoteServerHost 208.43.25.43 -remoteServerPort 443 -storePass WcmBtZCAvYPlVrtG9aBvJoTw9'
+31/07/2017 10:39:09     FINE [0001:main] TasksHandlerImpl: Starting tunnel client output reader thread
+31/07/2017 10:39:16     INFO [003a:Tunnel client output reader thread] TasksHandlerImpl: Scan "10.0.2.15" tunnel: Connecting to scanning agent...
+31/07/2017 10:39:19     INFO [003a:Tunnel client output reader thread] TasksHandlerImpl: Scan "10.0.2.15" tunnel: Successfully connected to scanning agent
+31/07/2017 10:39:24     INFO [0001:main] AgentDataImpl: Process for job 9135ba47-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:39:25     INFO [0001:main] TasksHandlerImpl: Received task STOP_TUNNEL with data '9135ba47-0676-e711-9aae-002590ac753d'
+31/07/2017 10:39:25     INFO [0001:main] TasksHandlerImpl: Stopping Tunnel Clients: 9135ba47-0676-e711-9aae-002590ac753d
+31/07/2017 10:39:25  WARNING [0001:main] TasksHandlerImpl: Stopping Tunnel Client: 9135ba47-0676-e711-9aae-002590ac753d
+31/07/2017 10:39:25     INFO [0001:main] AgentDataImpl: Process for job 9135ba47-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:39:25     INFO [0001:main] TasksHandlerImpl: Closing tunnel connection for scan "10.0.2.15"
+31/07/2017 10:39:28     INFO [0001:main] TunnelClientWrapperImpl: Destroying process
+31/07/2017 10:39:29   SEVERE [0001:main] ExternalAPIWrapperImpl: Failed attempt 1/3 to upload logs taskId: 9135ba47-0676-e711-9aae-002590ac753d. Exception: com.ibm.appscan.saas.external.agentapi.IScanningServiceUploadLogBadRequestFaultFaultFaultMessage: The creator of this fault did not specify a Reason.\n	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)\n	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)\n	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)\n	at com.sun.xml.internal.ws.fault.SOAPFaultBuilder.createException(SOAPFaultBuilder.java:147)\n	at com.sun.xml.internal.ws.client.sei.StubHandler.readResponse(StubHandler.java:250)\n	at com.sun.xml.internal.ws.db.DatabindingImpl.deserializeResponse(DatabindingImpl.java:201)\n	at com.sun.xml.internal.ws.db.DatabindingImpl.deserializeResponse(DatabindingImpl.java:288)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:116)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:89)\n	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:159)\n	at com.sun.proxy.$Proxy41.uploadLog(Unknown Source)\n	at com.ibm.appscan.saas.external.agentservice.ExternalAPIWrapperImpl.uploadLogs(ExternalAPIWrapperImpl.java:30)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.cleanUp(TunnelClientWrapperImpl.java:202)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.destroy(TunnelClientWrapperImpl.java:291)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:186)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\n
+31/07/2017 10:39:39   SEVERE [0001:main] ExternalAPIWrapperImpl: Failed attempt 2/3 to upload logs taskId: 9135ba47-0676-e711-9aae-002590ac753d. Exception: com.ibm.appscan.saas.external.agentapi.IScanningServiceUploadLogBadRequestFaultFaultFaultMessage: The creator of this fault did not specify a Reason.\n	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)\n	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)\n	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)\n	at com.sun.xml.internal.ws.fault.SOAPFaultBuilder.createException(SOAPFaultBuilder.java:147)\n	at com.sun.xml.internal.ws.client.sei.StubHandler.readResponse(StubHandler.java:250)\n	at com.sun.xml.internal.ws.db.DatabindingImpl.deserializeResponse(DatabindingImpl.java:201)\n	at com.sun.xml.internal.ws.db.DatabindingImpl.deserializeResponse(DatabindingImpl.java:288)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:116)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:89)\n	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:159)\n	at com.sun.proxy.$Proxy41.uploadLog(Unknown Source)\n	at com.ibm.appscan.saas.external.agentservice.ExternalAPIWrapperImpl.uploadLogs(ExternalAPIWrapperImpl.java:30)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.cleanUp(TunnelClientWrapperImpl.java:202)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.destroy(TunnelClientWrapperImpl.java:291)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:186)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\n
+31/07/2017 10:39:49   SEVERE [0001:main] ExternalAPIWrapperImpl: Failed attempt 3/3 to upload logs taskId: 9135ba47-0676-e711-9aae-002590ac753d. Exception: com.ibm.appscan.saas.external.agentapi.IScanningServiceUploadLogBadRequestFaultFaultFaultMessage: The creator of this fault did not specify a Reason.\n	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)\n	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)\n	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)\n	at com.sun.xml.internal.ws.fault.SOAPFaultBuilder.createException(SOAPFaultBuilder.java:147)\n	at com.sun.xml.internal.ws.client.sei.StubHandler.readResponse(StubHandler.java:250)\n	at com.sun.xml.internal.ws.db.DatabindingImpl.deserializeResponse(DatabindingImpl.java:201)\n	at com.sun.xml.internal.ws.db.DatabindingImpl.deserializeResponse(DatabindingImpl.java:288)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:116)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:89)\n	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:159)\n	at com.sun.proxy.$Proxy41.uploadLog(Unknown Source)\n	at com.ibm.appscan.saas.external.agentservice.ExternalAPIWrapperImpl.uploadLogs(ExternalAPIWrapperImpl.java:30)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.cleanUp(TunnelClientWrapperImpl.java:202)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.destroy(TunnelClientWrapperImpl.java:291)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:186)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\n
+31/07/2017 10:39:49     INFO [0001:main] TunnelClientWrapperImpl: Deleting key files in dir: Client/9135ba47-0676-e711-9aae-002590ac753d
+31/07/2017 10:40:04  WARNING [0001:main] AgentDataImpl: Failed reading process output. Exception: java.io.IOException: Stream closed\n	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:181)\n	at java.io.BufferedInputStream.read(BufferedInputStream.java:347)\n	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:323)\n	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:365)\n	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:211)\n	at java.io.InputStreamReader.read(InputStreamReader.java:205)\n	at java.io.Reader.read(Reader.java:151)\n	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:2001)\n	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1980)\n	at org.apache.commons.io.IOUtils.copy(IOUtils.java:1957)\n	at org.apache.commons.io.IOUtils.copy(IOUtils.java:1907)\n	at org.apache.commons.io.IOUtils.toString(IOUtils.java:778)\n	at org.apache.commons.io.IOUtils.toString(IOUtils.java:759)\n	at com.ibm.appscan.saas.common.AgentDataCommonImpl.getProcessOutput(AgentDataCommonImpl.java:119)\n	at com.ibm.appscan.saas.common.AgentDataCommonImpl.getRunningJobs(AgentDataCommonImpl.java:42)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:97)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\n
+31/07/2017 10:40:04     INFO [0001:main] AgentDataImpl: Process for job 9135ba47-0676-e711-9aae-002590ac753d has exited with code 0. \nOutput: 
+31/07/2017 10:40:04   SEVERE [0001:main] TunnelClientWrapperImpl: Failed to stop tunnel client. Exception: java.io.IOException: Stream closed\n	at java.lang.ProcessBuilder$NullOutputStream.write(ProcessBuilder.java:444)\n	at java.io.OutputStream.write(OutputStream.java:127)\n	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:93)\n	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:151)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.destroy(TunnelClientWrapperImpl.java:279)\n	at com.ibm.appscan.saas.common.AgentDataCommonImpl.getRunningJobs(AgentDataCommonImpl.java:43)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:97)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\n
+31/07/2017 10:40:04     INFO [0001:main] TunnelClientWrapperImpl: Destroying process
+31/07/2017 10:40:04     INFO [0001:main] TunnelClientWrapperImpl: Deleting key files in dir: Client/9135ba47-0676-e711-9aae-002590ac753d
+31/07/2017 10:40:05     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 10:40:05     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 10:40:05     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 10:40:05     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 10:42:39     INFO [0001:main] TasksHandlerImpl: Received task START_TUNNEL with data 'da19f396-0676-e711-9aae-002590ac753d'
+31/07/2017 10:42:39     INFO [0001:main] TasksHandlerImpl: Starting Tunnel Client '208.43.25.48:443'
+31/07/2017 10:42:39     INFO [0001:main] TasksHandlerImpl: Opening tunnel connection for scan "9000.dast" with starting URL: http://10.0.2.15:7000
+31/07/2017 10:42:39     INFO [0001:main] TunnelClientWrapperImpl: Creating client output directory: /home/j/Downloads/AppScanPresence-Linux_x86_64/Client/da19f396-0676-e711-9aae-002590ac753d
+31/07/2017 10:42:39   FINEST [0001:main] ProcessUtils: Starting process: '/home/j/Downloads/AppScanPresence-Linux_x86_64/java/jre/bin/java -jar ../TunnelClient.jar -remoteServerHost 208.43.25.48 -remoteServerPort 443 -storePass B9sfffMzdnFH8HSpXsxSrGAam'
+31/07/2017 10:42:39     FINE [0001:main] TasksHandlerImpl: Starting tunnel client output reader thread
+31/07/2017 10:42:44     INFO [0058:Tunnel client output reader thread] TasksHandlerImpl: Scan "9000.dast" tunnel: Connecting to scanning agent...
+31/07/2017 10:42:46     INFO [0058:Tunnel client output reader thread] TasksHandlerImpl: Scan "9000.dast" tunnel: Successfully connected to scanning agent
+31/07/2017 10:42:54     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:43:10     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:43:25     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:43:41     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:43:56     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:44:12     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:44:27     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:44:43     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:44:43     INFO [0001:main] TasksHandlerImpl: Received task STOP_TUNNEL with data 'da19f396-0676-e711-9aae-002590ac753d'
+31/07/2017 10:44:43     INFO [0001:main] TasksHandlerImpl: Stopping Tunnel Clients: da19f396-0676-e711-9aae-002590ac753d
+31/07/2017 10:44:43  WARNING [0001:main] TasksHandlerImpl: Stopping Tunnel Client: da19f396-0676-e711-9aae-002590ac753d
+31/07/2017 10:44:43     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d is still running
+31/07/2017 10:44:43     INFO [0001:main] TasksHandlerImpl: Closing tunnel connection for scan "9000.dast"
+31/07/2017 10:44:48     INFO [0001:main] TunnelClientWrapperImpl: Destroying process
+31/07/2017 10:44:49     INFO [0001:main] ExternalAPIWrapperImpl: Uploaded logs successfully
+31/07/2017 10:44:49     INFO [0001:main] TunnelClientWrapperImpl: Deleting key files in dir: Client/da19f396-0676-e711-9aae-002590ac753d
+31/07/2017 10:45:04  WARNING [0001:main] AgentDataImpl: Failed reading process output. Exception: java.io.IOException: Stream closed\n	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:181)\n	at java.io.BufferedInputStream.read(BufferedInputStream.java:347)\n	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:323)\n	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:365)\n	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:211)\n	at java.io.InputStreamReader.read(InputStreamReader.java:205)\n	at java.io.Reader.read(Reader.java:151)\n	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:2001)\n	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1980)\n	at org.apache.commons.io.IOUtils.copy(IOUtils.java:1957)\n	at org.apache.commons.io.IOUtils.copy(IOUtils.java:1907)\n	at org.apache.commons.io.IOUtils.toString(IOUtils.java:778)\n	at org.apache.commons.io.IOUtils.toString(IOUtils.java:759)\n	at com.ibm.appscan.saas.common.AgentDataCommonImpl.getProcessOutput(AgentDataCommonImpl.java:119)\n	at com.ibm.appscan.saas.common.AgentDataCommonImpl.getRunningJobs(AgentDataCommonImpl.java:42)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:97)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\n
+31/07/2017 10:45:04     INFO [0001:main] AgentDataImpl: Process for job da19f396-0676-e711-9aae-002590ac753d has exited with code 0. \nOutput: 
+31/07/2017 10:45:04   SEVERE [0001:main] TunnelClientWrapperImpl: Failed to stop tunnel client. Exception: java.io.IOException: Stream closed\n	at java.lang.ProcessBuilder$NullOutputStream.write(ProcessBuilder.java:444)\n	at java.io.OutputStream.write(OutputStream.java:127)\n	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:93)\n	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:151)\n	at com.ibm.appscan.saas.external.agentservice.TunnelClientWrapperImpl.destroy(TunnelClientWrapperImpl.java:279)\n	at com.ibm.appscan.saas.common.AgentDataCommonImpl.getRunningJobs(AgentDataCommonImpl.java:43)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:97)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\n
+31/07/2017 10:45:04     INFO [0001:main] TunnelClientWrapperImpl: Destroying process
+31/07/2017 10:45:04     INFO [0001:main] TunnelClientWrapperImpl: Deleting key files in dir: Client/da19f396-0676-e711-9aae-002590ac753d
+31/07/2017 10:45:20     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 10:45:20     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 10:45:20     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 10:45:20     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 10:50:28     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 10:50:28     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 10:50:28     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 10:50:28     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 10:54:19     INFO [0001:main] TasksHandlerImpl: Received task START_TUNNEL with data 'ea60cb5c-0876-e711-9aae-002590ac753d'
+31/07/2017 10:54:19     INFO [0001:main] TasksHandlerImpl: Starting Tunnel Client '208.43.25.53:443'
+31/07/2017 10:54:19     INFO [0001:main] TasksHandlerImpl: Opening tunnel connection for scan "9000.dast" with starting URL: http://10.0.2.15:7000
+31/07/2017 10:54:19     INFO [0001:main] TunnelClientWrapperImpl: Creating client output directory: /home/j/Downloads/AppScanPresence-Linux_x86_64/Client/ea60cb5c-0876-e711-9aae-002590ac753d
+31/07/2017 10:54:19   FINEST [0001:main] ProcessUtils: Starting process: '/home/j/Downloads/AppScanPresence-Linux_x86_64/java/jre/bin/java -jar ../TunnelClient.jar -remoteServerHost 208.43.25.53 -remoteServerPort 443 -storePass tO4LkccbiQj6G0ZoNIJtNAzen'
+31/07/2017 10:54:19     FINE [0001:main] TasksHandlerImpl: Starting tunnel client output reader thread
+31/07/2017 10:54:24     INFO [00b6:Tunnel client output reader thread] TasksHandlerImpl: Scan "9000.dast" tunnel: Connecting to scanning agent...
+31/07/2017 10:54:26     INFO [00b6:Tunnel client output reader thread] TasksHandlerImpl: Scan "9000.dast" tunnel: Successfully connected to scanning agent
+31/07/2017 10:54:34     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:54:50     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:55:05     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:55:21     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:55:36     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:55:36     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 10:55:36     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 10:55:36     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 10:55:36     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 10:55:52     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:56:07     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:56:23     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:56:38     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:56:54     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:57:09     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:57:25     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:57:40     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:57:56     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:58:11     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:58:27     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:58:42     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:58:58     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:59:13     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:59:29     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:59:44     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 10:59:59     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:00:15     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:00:30     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:00:46     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:00:46     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 11:00:46     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 11:00:46     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:00:46     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 11:01:02     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:01:17     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:01:32     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:01:48     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:02:00   SEVERE [0001:main] Main: Main loop error. Exception: com.sun.xml.internal.ws.client.ClientTransportException: HTTP transport error: java.net.UnknownHostException: appscan.bluemix.net\n	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:129)\n	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:220)\n	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:142)\n	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:107)\n	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1133)\n	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1047)\n	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1016)\n	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Fiber.java:874)\n	at com.sun.xml.internal.ws.client.Stub.process(Stub.java:460)\n	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(SEIStub.java:190)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:105)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:89)\n	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:159)\n	at com.sun.proxy.$Proxy41.getTask(Unknown Source)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:101)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\nCaused by: java.net.UnknownHostException: appscan.bluemix.net\n	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:214)\n	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)\n	at java.net.Socket.connect(Socket.java:666)\n	at com.ibm.jsse2.at.connect(at.java:296)\n	at sun.net.NetworkClient.doConnect(NetworkClient.java:190)\n	at sun.net.www.http.HttpClient.openServer(HttpClient.java:494)\n	at sun.net.www.http.HttpClient.openServer(HttpClient.java:589)\n	at com.ibm.net.ssl.www2.protocol.https.c.<init>(c.java:212)\n	at com.ibm.net.ssl.www2.protocol.https.c.a(c.java:175)\n	at com.ibm.net.ssl.www2.protocol.https.d.getNewHttpClient(d.java:24)\n	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)\n	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1045)\n	at com.ibm.net.ssl.www2.protocol.https.d.connect(d.java:40)\n	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1330)\n	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1305)\n	at com.ibm.net.ssl.www2.protocol.https.b.getOutputStream(b.java:85)\n	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:116)\n	... 15 more\n
+31/07/2017 11:02:00     INFO [0001:main] Main: Error connecting to server. If problem persists, please verify you have a working Internet connection. If a proxy is required, please configure it in config.properties and then re-start AppScan Presence.
+31/07/2017 11:02:00     INFO [0001:main] Main: Attempting to reconnect to 'IBM Application Security on Cloud'...
+31/07/2017 11:02:00     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:02:00     INFO [0001:main] Main: Found existing job with id: ea60cb5c-0876-e711-9aae-002590ac753d during reset
+31/07/2017 11:02:30     INFO [0001:main] Main: Initializing agent service soap client
+31/07/2017 11:02:31     INFO [0001:main] (External): Jul 31, 2017 11:02:31 AM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0075: Policy assertion "{http://schemas.xmlsoap.org/ws/2005/07/securitypolicy}TransportBinding" was evaluated as "UNKNOWN".\n
+31/07/2017 11:02:31     INFO [0001:main] (External): Jul 31, 2017 11:02:31 AM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0019: Suboptimal policy alternative selected on the client side with fitness "PARTIALLY_SUPPORTED".\n
+31/07/2017 11:02:31     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:02:31     INFO [0001:main] CommonUtils: IP Address is: /10.0.2.15
+31/07/2017 11:02:31     INFO [0001:main] TasksHandlerImpl: Registering agent j-VirtualBox:10.0.2.15
+31/07/2017 11:02:32     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:02:32     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 11:02:32     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:02:33     INFO [0001:main] Main: Successfully connected to 'IBM Application Security on Cloud'
+31/07/2017 11:02:33     INFO [0001:main] Main: You can now return to 'IBM Application Security on Cloud' and complete scan configuration.
+31/07/2017 11:02:33     INFO [0001:main] Main: To terminate the AppScan Presence program, press Ctrl+C.
+31/07/2017 11:02:48     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:03:03     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:03:19     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:03:34     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:03:50     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:04:05     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:04:20     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:04:36     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:04:51     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:05:07     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:05:22     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:05:38     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:05:53     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:06:09     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:06:24     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:06:40     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:06:55     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:07:11     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:07:27     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:07:42     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:07:43     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 11:07:43     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 11:07:43     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:07:43     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 11:07:58     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:08:14     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:08:29     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:08:45     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:20:11   SEVERE [0001:main] Main: Main loop error. Exception: com.sun.xml.internal.ws.client.ClientTransportException: HTTP transport error: java.net.UnknownHostException: appscan.bluemix.net\n	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:129)\n	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:220)\n	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:142)\n	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:107)\n	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1133)\n	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1047)\n	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1016)\n	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Fiber.java:874)\n	at com.sun.xml.internal.ws.client.Stub.process(Stub.java:460)\n	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(SEIStub.java:190)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:105)\n	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:89)\n	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:159)\n	at com.sun.proxy.$Proxy41.getTask(Unknown Source)\n	at com.ibm.appscan.saas.external.agentservice.TasksHandlerImpl.handleTask(TasksHandlerImpl.java:101)\n	at com.ibm.appscan.saas.external.agentservice.Main.main(Main.java:212)\nCaused by: java.net.UnknownHostException: appscan.bluemix.net\n	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:214)\n	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)\n	at java.net.Socket.connect(Socket.java:666)\n	at com.ibm.jsse2.at.connect(at.java:296)\n	at sun.net.NetworkClient.doConnect(NetworkClient.java:190)\n	at sun.net.www.http.HttpClient.openServer(HttpClient.java:494)\n	at sun.net.www.http.HttpClient.openServer(HttpClient.java:589)\n	at com.ibm.net.ssl.www2.protocol.https.c.<init>(c.java:212)\n	at com.ibm.net.ssl.www2.protocol.https.c.a(c.java:175)\n	at com.ibm.net.ssl.www2.protocol.https.d.getNewHttpClient(d.java:24)\n	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)\n	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1045)\n	at com.ibm.net.ssl.www2.protocol.https.d.connect(d.java:40)\n	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1330)\n	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1305)\n	at com.ibm.net.ssl.www2.protocol.https.b.getOutputStream(b.java:85)\n	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:116)\n	... 15 more\n
+31/07/2017 11:20:11     INFO [0001:main] Main: Error connecting to server. If problem persists, please verify you have a working Internet connection. If a proxy is required, please configure it in config.properties and then re-start AppScan Presence.
+31/07/2017 11:20:11     INFO [0001:main] Main: Attempting to reconnect to 'IBM Application Security on Cloud'...
+31/07/2017 11:20:11     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:20:11     INFO [0001:main] Main: Found existing job with id: ea60cb5c-0876-e711-9aae-002590ac753d during reset
+31/07/2017 11:20:41     INFO [0001:main] Main: Initializing agent service soap client
+31/07/2017 11:20:42     INFO [0001:main] (External): Jul 31, 2017 11:20:42 AM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0075: Policy assertion "{http://schemas.xmlsoap.org/ws/2005/07/securitypolicy}TransportBinding" was evaluated as "UNKNOWN".\n
+31/07/2017 11:20:42     INFO [0001:main] (External): Jul 31, 2017 11:20:42 AM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0019: Suboptimal policy alternative selected on the client side with fitness "PARTIALLY_SUPPORTED".\n
+31/07/2017 11:20:42     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:20:42     INFO [0001:main] CommonUtils: IP Address is: /10.0.2.15
+31/07/2017 11:20:42     INFO [0001:main] TasksHandlerImpl: Registering agent j-VirtualBox:10.0.2.15
+31/07/2017 11:20:43     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:20:43     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 11:20:43     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:20:43     INFO [0001:main] Main: Successfully connected to 'IBM Application Security on Cloud'
+31/07/2017 11:20:43     INFO [0001:main] Main: You can now return to 'IBM Application Security on Cloud' and complete scan configuration.
+31/07/2017 11:20:43     INFO [0001:main] Main: To terminate the AppScan Presence program, press Ctrl+C.
+31/07/2017 11:20:58     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:21:14     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:21:29     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:21:45     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:22:00     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:22:16     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:22:31     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:22:47     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:23:02     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:23:18     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:23:33     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:23:49     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:24:04     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:24:20     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:24:35     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:24:51     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:25:06     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:25:22     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:25:37     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:25:53     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:25:53     INFO [0001:main] TasksHandlerImpl: Received task SEND_AGENT_DATA with data 'null'
+31/07/2017 11:25:53     INFO [0001:main] TasksHandlerImpl: Sending agent data
+31/07/2017 11:25:53     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+31/07/2017 11:25:53     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+31/07/2017 11:26:08     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:26:24     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:26:39     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:26:55     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:27:10     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:27:26     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:27:41     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:27:42     INFO [0001:main] TasksHandlerImpl: Received task STOP_TUNNEL with data 'ea60cb5c-0876-e711-9aae-002590ac753d'
+31/07/2017 11:27:42     INFO [0001:main] TasksHandlerImpl: Stopping Tunnel Clients: ea60cb5c-0876-e711-9aae-002590ac753d
+31/07/2017 11:27:42  WARNING [0001:main] TasksHandlerImpl: Stopping Tunnel Client: ea60cb5c-0876-e711-9aae-002590ac753d
+31/07/2017 11:27:42     INFO [0001:main] AgentDataImpl: Process for job ea60cb5c-0876-e711-9aae-002590ac753d is still running
+31/07/2017 11:27:42     INFO [0001:main] TasksHandlerImpl: Closing tunnel connection for scan "9000.dast"

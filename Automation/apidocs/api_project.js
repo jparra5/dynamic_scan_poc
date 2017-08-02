@@ -1,0 +1,19 @@
+define({
+  "name": "AppScan Proxy Server",
+  "version": "0.1.0",
+  "description": "AppScan Proxy Server allows you to record traffic for a security scan",
+  "title": "AppScan Proxy Server",
+  "url": "http://[server]:[port]/automation",
+  "template": {
+    "forceLanguage": "en"
+  },
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2017-07-05T12:09:41.951Z",
+    "url": "http://apidocjs.com",
+    "version": "0.17.5"
+  }
+});

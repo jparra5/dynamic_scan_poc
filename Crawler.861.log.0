@@ -1,0 +1,24 @@
+01/08/2017 15:48:58     INFO [0001:main] Log: Logs started
+01/08/2017 15:49:00     FINE [0001:main] EncryptionUtils: Initializing FIPS mode (IBM)
+01/08/2017 15:49:00     INFO [0001:main] CommonUtils: Service Version: 1.0.7132
+01/08/2017 15:49:00     INFO [0001:main] CommonUtils: OS name: Linux; version: 4.2.0-27-generic; arch: amd64
+01/08/2017 15:49:00   FINEST [0001:main] HiddenConfig: No hidden config found. Using default settings.
+01/08/2017 15:49:00   FINEST [0001:main] Main: Loading key file AppScanPresence.key
+01/08/2017 15:49:01   FINEST [0001:main] UserConfig: Using user properties file config.properties
+01/08/2017 15:49:01     INFO [0001:main] CommonUtils: User Config:
+01/08/2017 15:49:01     INFO [0001:main] Main: Private Site Server enabled
+01/08/2017 15:49:01     INFO [0001:main] Main: No outgoing proxy configured
+01/08/2017 15:49:01     INFO [0001:main] Main: To change this configuration edit the file config.properties located in the AppScan Presence directory
+01/08/2017 15:49:01     INFO [0001:main] Main: 
+01/08/2017 15:49:01     INFO [0001:main] Main: Connecting to 'IBM Application Security on Cloud'...
+01/08/2017 15:49:01     INFO [0001:main] Main: Initializing agent service soap client
+01/08/2017 15:49:03     INFO [0001:main] (External): Aug 01, 2017 3:49:03 PM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0075: Policy assertion "{http://schemas.xmlsoap.org/ws/2005/07/securitypolicy}TransportBinding" was evaluated as "UNKNOWN".\n
+01/08/2017 15:49:03     INFO [0001:main] (External): Aug 01, 2017 3:49:03 PM [com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector]  selectBestAlternative\nWARNING: WSP0019: Suboptimal policy alternative selected on the client side with fitness "PARTIALLY_SUPPORTED".\n
+01/08/2017 15:49:03     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+01/08/2017 15:49:03     INFO [0001:main] CommonUtils: IP Address is: /10.0.2.15
+01/08/2017 15:49:03     INFO [0001:main] TasksHandlerImpl: Registering agent j-VirtualBox:10.0.2.15
+01/08/2017 15:49:04     INFO [0001:main] CommonUtils: Hostname is: j-VirtualBox
+01/08/2017 15:49:04     INFO [0001:main] CommonUtils: Version read from jar file '/home/j/Downloads/AppScanPresence-Linux_x86_64/Client/TunnelClient.jar' is 1.1.176
+01/08/2017 15:49:05     INFO [0001:main] Main: Successfully connected to 'IBM Application Security on Cloud'
+01/08/2017 15:49:05     INFO [0001:main] Main: You can now return to 'IBM Application Security on Cloud' and complete scan configuration.
+01/08/2017 15:49:05     INFO [0001:main] Main: To terminate the AppScan Presence program, press Ctrl+C.
