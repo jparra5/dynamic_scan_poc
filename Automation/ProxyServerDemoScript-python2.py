@@ -213,6 +213,7 @@ class AsocRestApi(object):
 
 
 def main():
+    print "I have started"
     config = ConfigData()
     proxy_server = ProxyServer(config)
     asoc_rest_api = AsocRestApi(config)
@@ -223,27 +224,31 @@ def main():
     presence_proc = Popen([u"./startPresence.sh"],
                       shell=True, cwd=os.environ[u'APPSCAN_PRESENCE_DIR'])
 
+    print "after the process stuff"
     # Wait for processes to start up.
     sleep(10)
     print u"\n\n\n"
+    print u"lol"
 
     is_running = proxy_server.is_proxy_server_running()
     if is_running:
         # proxy_server.download_root_ca()
+        print "before proxy stuff"
         proxy_server.start_proxy()
         run_traffic_script(config.proxy_port)
         proxy_server.stop_proxy()
         proxy_server.download_traffic()
-
+        print "finished proxy stuff"
         sleep(5)
         ls_proc = Popen([u"ls -l"],
                           shell=True)
         sleep(10)
-
+        print "starting a scan - woot"
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
         asoc_rest_api.loginWithKeyId()
         asoc_rest_api.uploadTrafficFile()
         scan_id = asoc_rest_api.createNewScanWithTraffic()
+        print "done with scans - woot"
         sleep(5)
     else:
         print u"XX Proxy Server wasn't found on port '" + config.proxy_server_port + u"'"
