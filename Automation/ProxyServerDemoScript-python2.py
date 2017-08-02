@@ -232,10 +232,6 @@ def main():
         run_traffic_script(config.proxy_port)
         proxy_server.stop_proxy()
         proxy_server.download_traffic()
-        proxy_proc = Popen([u"ls -l"],
-                          shell=True)
-        sleep(20)
-        os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
         asoc_rest_api.loginWithKeyId()
         asoc_rest_api.uploadTrafficFile()
