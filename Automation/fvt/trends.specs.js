@@ -45,7 +45,7 @@
     function arestcall(options, callback) {
       console.log("What is happeneing?");
       console.log("no proxy");
-        options.proxy = "http://10.0.2.15:9000"
+        options.proxy = "http://" + process.env.PROXY_SERVER_DOMAIN + ":" + process.env.PROXY_TARGET_PORT
         if ((typeof(process.env.FVT_DEBUG) !== 'undefined') && (process.env.FVT_DEBUG === "true")) {
             console.log("*************** Request ***********************");
             console.log("options - ", options);
