@@ -179,6 +179,7 @@ class AsocRestApi(object):
             exit(1)
 
     def createNewScanWithTraffic(self):
+        print "Scan has been created"
         print u"** Publishing scan with the recorded traffic to ASoC"
         url = self.config.asoc_base_url + u'/api/v2/Scans/DynamicAnalyzerWithFile'
         requestData = CreateScanWithFileData(self.config)
@@ -203,7 +204,8 @@ class AsocRestApi(object):
         response = requests.get(url=url, headers=self.getHeaders(True, True), verify=False)
         # response_str = str(response.json())
         # print("ASoC Server Response:" + response_str)
-        print u"Status: {}, Progress: {}, Id: {}".format(
+        print "Status!"
+        print "Status: {}, Progress: {}, Id: {}".format(
             response.json()[u"LatestExecution"][u"Status"],
             response.json()[u"LatestExecution"][u"Progress"],
             scan_id)
@@ -232,10 +234,17 @@ def main():
         run_traffic_script(config.proxy_port)
         proxy_server.stop_proxy()
         proxy_server.download_traffic()
+
+        sleep(5)
+        ls_proc = Popen([u"ls -l"],
+                          shell=True)
+        sleep(10)
+
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
         asoc_rest_api.loginWithKeyId()
         asoc_rest_api.uploadTrafficFile()
         scan_id = asoc_rest_api.createNewScanWithTraffic()
+        sleep(5)
     else:
         print u"XX Proxy Server wasn't found on port '" + config.proxy_server_port + u"'"
 
