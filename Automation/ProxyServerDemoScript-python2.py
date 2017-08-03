@@ -179,7 +179,6 @@ class AsocRestApi(object):
             exit(1)
 
     def createNewScanWithTraffic(self):
-        print "Scan has been created"
         print u"** Publishing scan with the recorded traffic to ASoC"
         url = self.config.asoc_base_url + u'/api/v2/Scans/DynamicAnalyzerWithFile'
         requestData = CreateScanWithFileData(self.config)
@@ -204,7 +203,6 @@ class AsocRestApi(object):
         response = requests.get(url=url, headers=self.getHeaders(True, True), verify=False)
         # response_str = str(response.json())
         # print("ASoC Server Response:" + response_str)
-        print "Status!"
         print "Status: {}, Progress: {}, Id: {}".format(
             response.json()[u"LatestExecution"][u"Status"],
             response.json()[u"LatestExecution"][u"Progress"],
@@ -213,42 +211,30 @@ class AsocRestApi(object):
 
 
 def main():
-    print "I have started"
     config = ConfigData()
     proxy_server = ProxyServer(config)
     asoc_rest_api = AsocRestApi(config)
 
-    proxy_proc = Popen([u"node app.js"],
+    proxy_proc = Popen([u"node app.js > /dev/null 2>&1"],
                       shell=True, cwd=u"{}Automation/".format(
                             os.environ[u'APPSCAN_PRESENCE_DIR']))
-    presence_proc = Popen([u"./startPresence.sh"],
+    presence_proc = Popen([u"./startPresence.sh > /dev/null 2>&1"],
                       shell=True, cwd=os.environ[u'APPSCAN_PRESENCE_DIR'])
 
-    print "after the process stuff"
     # Wait for processes to start up.
     sleep(10)
-    print u"\n\n\n"
-    print u"lol"
 
     is_running = proxy_server.is_proxy_server_running()
     if is_running:
         # proxy_server.download_root_ca()
-        print "before proxy stuff"
         proxy_server.start_proxy()
         run_traffic_script(config.proxy_port)
         proxy_server.stop_proxy()
         proxy_server.download_traffic()
-        print "finished proxy stuff"
-        sleep(5)
-        ls_proc = Popen([u"ls -l"],
-                          shell=True)
-        sleep(5)
-        print "starting a scan - woot"
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
         asoc_rest_api.loginWithKeyId()
         asoc_rest_api.uploadTrafficFile()
         scan_id = asoc_rest_api.createNewScanWithTraffic()
-        print "done with scans - woot"
         sleep(5)
     else:
         print u"XX Proxy Server wasn't found on port '" + config.proxy_server_port + u"'"
@@ -287,8 +273,8 @@ def run_traffic_script(proxy_port):
                       shell=True, stdout=PIPE, stderr=PIPE)
     out, err = proc.communicate();
 
-    print(out)
-    print(err)
+    # print(out)
+    # print(err)
     # if not "Authenticated successfully." in out:
         # raise Exception("Unable to login to Static Analysis service")
     print u"*** Finished running traffic through the proxy"
