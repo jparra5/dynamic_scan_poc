@@ -286,8 +286,9 @@ def run_traffic_script(proxy_port):
 
 
     proc = Popen([u"grunt dev-fvttest"],
-                      shell=True, stdout=PIPE, stderr=PIPE)
-    out, err = proc.communicate();
+                      shell=True)
+                    #   shell=True, stdout=PIPE, stderr=PIPE)
+    # out, err = proc.communicate();
 
     # print(out)
     # print(err)
