@@ -215,7 +215,7 @@ def main():
     proxy_server = ProxyServer(config)
     asoc_rest_api = AsocRestApi(config)
 
-    print("Starting the Proxy Server and Appscan Presence")
+    print "Starting the Proxy Server and Appscan Presence"
 
     proxy_proc = Popen([u"node app.js > /dev/null 2>&1"],
                       shell=True, cwd=u"{}Automation/".format(
@@ -248,7 +248,7 @@ def main():
             if status in [u"Ready", u"Failed"]:
                 # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
                 # os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
-                exit()
+                print "Scan is complete"
             else:
                 sleep(180)
     except:
