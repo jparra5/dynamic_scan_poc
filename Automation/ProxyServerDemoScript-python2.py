@@ -215,6 +215,8 @@ def main():
     proxy_server = ProxyServer(config)
     asoc_rest_api = AsocRestApi(config)
 
+    print("Starting the Proxy Server and Appscan Presence")
+
     proxy_proc = Popen([u"node app.js > /dev/null 2>&1"],
                       shell=True, cwd=u"{}Automation/".format(
                             os.environ[u'APPSCAN_PRESENCE_DIR']))
@@ -269,7 +271,7 @@ def run_traffic_script(proxy_port):
 
 
 
-    proc = Popen([u"grunt dev-fvttest"],
+    proc = Popen([os.environ['APPSCAN_PRESENCE_TRAFFIC_SCRIPT']],
                     #   shell=True)
                       shell=True, stdout=PIPE, stderr=PIPE)
     out, err = proc.communicate();
