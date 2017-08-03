@@ -243,10 +243,6 @@ def main():
         ls_proc = Popen([u"ls -l"],
                           shell=True)
         sleep(5)
-        # echo_proc = Popen([u'echo "$(cat scan.dast.config | base64)"'],
-                        #   shell=True)
-        sleep(10)
-        os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
         print "starting a scan - woot"
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
         asoc_rest_api.loginWithKeyId()
