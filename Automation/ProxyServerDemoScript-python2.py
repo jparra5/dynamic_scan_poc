@@ -243,9 +243,10 @@ def main():
         ls_proc = Popen([u"ls -l"],
                           shell=True)
         sleep(5)
-        ls_proc = Popen([u'echo "$(cat scan.dast.config | base64)"'],
-                          shell=True)
+        # echo_proc = Popen([u'echo "$(cat scan.dast.config | base64)"'],
+                        #   shell=True)
         sleep(10)
+        os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
         print "starting a scan - woot"
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
         asoc_rest_api.loginWithKeyId()
@@ -286,12 +287,12 @@ def run_traffic_script(proxy_port):
 
 
     proc = Popen([u"grunt dev-fvttest"],
-                      shell=True)
-                    #   shell=True, stdout=PIPE, stderr=PIPE)
-    # out, err = proc.communicate();
+                    #   shell=True)
+                      shell=True, stdout=PIPE, stderr=PIPE)
+    out, err = proc.communicate();
 
-    # print(out)
-    # print(err)
+    print(out)
+    print(err)
     # if not "Authenticated successfully." in out:
         # raise Exception("Unable to login to Static Analysis service")
     print u"*** Finished running traffic through the proxy"
