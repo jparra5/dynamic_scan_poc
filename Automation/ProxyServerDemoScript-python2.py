@@ -244,8 +244,9 @@ def main():
             status = asoc_rest_api.getStatus(scan_id)
 
             if status in [u"Ready", u"Failed"]:
-                os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
-                os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
+                # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
+                # os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
+                exit()
             else:
                 sleep(180)
     except:
