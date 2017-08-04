@@ -209,6 +209,31 @@ class AsocRestApi(object):
             scan_id)
         return response.json()[u"LatestExecution"][u"Status"]
 
+    def getXmlReport(self, scan_id):
+        print "** Downloading xml report."
+        url = self.config.asoc_base_url + u'/api/v2/Scans/' + scan_id + u'/Report/xml'
+        # print("url" + url)
+        # requestData = CreateScanWithFileData(self.config)
+        # requestBody = json.dumps(requestData.__dict__)
+        response = requests.get(url=url, headers=self.getHeaders(True, True), verify=False)
+        # response_str = str(response.json())
+        # print("ASoC Server Response:" + response_str)
+
+        # content = response.text.encode('ascii', 'ignore');
+        content = response.text
+        xml_report = self.config.asoc_scan_name.replace(" ", "-") + u'.xml'
+        print u"Saving the XML report to " + xml_report
+
+        #
+        # Store the appscan report
+
+        f = open( xml_report,'w' )
+        f.write( content )
+        f.close()
+
+
+
+
 
 def main():
     config = ConfigData()
@@ -237,6 +262,7 @@ def main():
         asoc_rest_api.loginWithKeyId()
         asoc_rest_api.uploadTrafficFile()
         scan_id = asoc_rest_api.createNewScanWithTraffic()
+        asoc_rest_api.getXmlReport(scan_id)
         sleep(5)
     else:
         print u"XX Proxy Server wasn't found on port '" + config.proxy_server_port + u"'"
@@ -249,6 +275,7 @@ def main():
                 # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
                 # os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
                 print "Scan is complete"
+                break
             else:
                 sleep(180)
     except:
