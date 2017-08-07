@@ -357,8 +357,8 @@ def run_traffic_script(proxy_port):
                       shell=True, stdout=PIPE, stderr=PIPE)
     out, err = proc.communicate();
 
-    print(out)
-    print(err)
+    # print(out)
+    # print(err)
     # if not "Authenticated successfully." in out:
         # raise Exception("Unable to login to Static Analysis service")
     print u"*** Finished running traffic through the proxy"
