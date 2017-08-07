@@ -315,7 +315,7 @@ def main():
             exit()
         except Exception as e:
             print "error:" + str(e)
-            os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
+            # os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
         # scan_id="b80a1411-5579-e711-9aae-002590ac753d"
         # asoc_rest_api.getXmlReport(scan_id)
         sleep(5)
@@ -338,7 +338,7 @@ def main():
         print "There was an error"
         print str(e)
         # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
-        os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
+        # os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
 
 def run_traffic_script(proxy_port):
     #This function should start the script\program of sending the traffic through the proxy port (it can be a selenium script or in any other way)
