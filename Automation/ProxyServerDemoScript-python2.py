@@ -277,6 +277,7 @@ def main():
     print "log in and download Appscan Presence"
     asoc_rest_api.loginWithKeyId()
     asoc_rest_api.downloadAppscanPresence()
+    exit()
     #
     presence_proc = Popen([u"chmod +x startPresence.sh"],
                       shell=True, cwd=config.asoc_presence_dir)
