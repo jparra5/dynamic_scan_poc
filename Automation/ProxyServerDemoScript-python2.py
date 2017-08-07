@@ -30,6 +30,7 @@ import signal
 import subprocess
 import json
 import requests
+import zipfile
 from time import sleep
 from subprocess import call, Popen, PIPE
 from io import open
@@ -52,6 +53,8 @@ class ConfigData(object):
         self.asoc_application_id = os.environ[u'APPSCAN_APP_ID']
         #If pss isn't required then leave the presence id blank ("")
         self.asoc_presence_id = os.environ[u'APPSCAN_PRESENCE_ID']
+        self.asoc_presence_dir = "../AppscanPresence"
+
         self.asoc_scan_starting_point_url = os.environ[u'APP_URL']
         self.asoc_scan_name = os.environ[u'APPSCAN_SCAN_NAME']
         ############################################################
@@ -185,8 +188,10 @@ class AsocRestApi(object):
         requestBody = json.dumps(requestData.__dict__)
         response = requests.post(url=url, data=requestBody, headers=self.getHeaders(True, True), verify=False)
         response_str = unicode(response.json())
-        print response.json()[u'Id']
+        print self.getHeaders(True, True)
+        print "Body:" + requestBody
         print u"ASoC Server Response:" + response_str
+        print response.json()[u'Id']
         if (response.status_code == 201 and response_str.__len__() > 0):
             print u"*** Scan with the recorded traffic has been published into ASoC successfully"
         else:
@@ -231,6 +236,35 @@ class AsocRestApi(object):
         f.write( content )
         f.close()
 
+    def downloadAppscanPresence(self):
+        print "** Downloading Appscan Presence."
+        url = self.config.asoc_base_url + u'/api/v2/Presences/' + self.config.asoc_presence_id + u'/Download/Linux_x86_64?access_token=' + self.asoc_token
+
+
+        # body={
+        #     "access_token": self.asoc_token
+        # }
+        # print body
+        # print self.getHeaders(True, True)
+        response = requests.post(url=url, headers=self.getHeaders(True, True), verify=False)
+        #
+        #
+        # print response.status_code
+        # print response.headers
+        # print response.encoding
+        #
+        # presence_file = u"presence.zip"
+        presence_file = open("presence.zip", u"wb")
+        for chunk in response.iter_content(chunk_size=1024):
+            if chunk:
+                presence_file.write(chunk)
+        presence_file.close()
+
+
+        zip_ref = zipfile.ZipFile("presence.zip", 'r')
+        zip_ref.extractall(self.config.asoc_presence_dir)
+        zip_ref.close()
+
 
 
 
@@ -240,29 +274,46 @@ def main():
     proxy_server = ProxyServer(config)
     asoc_rest_api = AsocRestApi(config)
 
-    print "Starting the Proxy Server and Appscan Presence"
+    print "log in and download Appscan Presence"
+    asoc_rest_api.loginWithKeyId()
+    asoc_rest_api.downloadAppscanPresence()
+    #
+    presence_proc = Popen([u"chmod +x startPresence.sh"],
+                      shell=True, cwd=config.asoc_presence_dir)
 
-    proxy_proc = Popen([u"node app.js > /dev/null 2>&1"],
-                      shell=True, cwd=u"{}Automation/".format(
-                            os.environ[u'APPSCAN_PRESENCE_DIR']))
-    presence_proc = Popen([u"./startPresence.sh > /dev/null 2>&1"],
-                      shell=True, cwd=os.environ[u'APPSCAN_PRESENCE_DIR'])
+    print "Starting the Proxy Server and Appscan Presence"
+    # # proxy_proc = Popen([u"node app.js > /dev/null 2>&1"],
+    proxy_proc = Popen([u"node app.js"],
+                      shell=True, cwd=u"{}/Automation/".format(
+                            config.asoc_presence_dir))
+    # # presence_proc = Popen([u"./startPresence.sh > /dev/null 2>&1"],
+    presence_proc = Popen([u"./startPresence.sh"],
+                      shell=True, cwd=config.asoc_presence_dir)
 
     # Wait for processes to start up.
-    sleep(10)
+    sleep(15)
 
     is_running = proxy_server.is_proxy_server_running()
     if is_running:
+    # if True:
         # proxy_server.download_root_ca()
         proxy_server.start_proxy()
         run_traffic_script(config.proxy_port)
         proxy_server.stop_proxy()
         proxy_server.download_traffic()
+        # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
-        asoc_rest_api.loginWithKeyId()
-        asoc_rest_api.uploadTrafficFile()
-        scan_id = asoc_rest_api.createNewScanWithTraffic()
-        asoc_rest_api.getXmlReport(scan_id)
+        # asoc_rest_api.loginWithKeyId()
+        # asoc_rest_api.downloadAppscanPresence()
+        # config.traffic_file_name="scan.dast.config"
+        try:
+            asoc_rest_api.uploadTrafficFile()
+            scan_id = asoc_rest_api.createNewScanWithTraffic()
+        except Exception as e:
+            print "error:" + str(e)
+            os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
+        # scan_id="b80a1411-5579-e711-9aae-002590ac753d"
+        # asoc_rest_api.getXmlReport(scan_id)
         sleep(5)
     else:
         print u"XX Proxy Server wasn't found on port '" + config.proxy_server_port + u"'"
@@ -275,11 +326,14 @@ def main():
                 # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
                 # os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
                 print "Scan is complete"
+                asoc_rest_api.getXmlReport(scan_id)
                 break
             else:
                 sleep(180)
-    except:
-        os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
+    except Exception as e:
+        print "There was an error"
+        print str(e)
+        # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
         os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
 
 def run_traffic_script(proxy_port):
@@ -303,8 +357,8 @@ def run_traffic_script(proxy_port):
                       shell=True, stdout=PIPE, stderr=PIPE)
     out, err = proc.communicate();
 
-    # print(out)
-    # print(err)
+    print(out)
+    print(err)
     # if not "Authenticated successfully." in out:
         # raise Exception("Unable to login to Static Analysis service")
     print u"*** Finished running traffic through the proxy"
