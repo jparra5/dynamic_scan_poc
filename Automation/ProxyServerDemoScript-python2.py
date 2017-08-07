@@ -312,7 +312,7 @@ def main():
         try:
             asoc_rest_api.uploadTrafficFile()
             scan_id = asoc_rest_api.createNewScanWithTraffic()
-            exit()
+            # exit()
         except Exception as e:
             print "error:" + str(e)
             # os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
