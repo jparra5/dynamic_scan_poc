@@ -293,7 +293,7 @@ def main():
 
     # Wait for processes to start up.
     sleep(15)
-    exit()
+    # exit()
 
     is_running = proxy_server.is_proxy_server_running()
     if is_running:
@@ -303,6 +303,7 @@ def main():
         run_traffic_script(config.proxy_port)
         proxy_server.stop_proxy()
         proxy_server.download_traffic()
+        exit()
         # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
         # asoc_rest_api.loginWithKeyId()
