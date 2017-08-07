@@ -303,7 +303,7 @@ def main():
         run_traffic_script(config.proxy_port)
         proxy_server.stop_proxy()
         proxy_server.download_traffic()
-        exit()
+
         # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
         # #Now that we have the traffic file, and we can use it with ASoC REST API or with ASE REST API
         # asoc_rest_api.loginWithKeyId()
@@ -312,6 +312,7 @@ def main():
         try:
             asoc_rest_api.uploadTrafficFile()
             scan_id = asoc_rest_api.createNewScanWithTraffic()
+            exit()
         except Exception as e:
             print "error:" + str(e)
             os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
