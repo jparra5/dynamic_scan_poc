@@ -300,6 +300,7 @@ def main():
     # if True:
         # proxy_server.download_root_ca()
         proxy_server.start_proxy()
+        sys.stdout.flush()
         run_traffic_script(config.proxy_port)
         proxy_server.stop_proxy()
         proxy_server.download_traffic()
@@ -312,6 +313,7 @@ def main():
         try:
             asoc_rest_api.uploadTrafficFile()
             scan_id = asoc_rest_api.createNewScanWithTraffic()
+            sys.stdout.flush()
             # exit()
         except Exception as e:
             print "error:" + str(e)
@@ -325,12 +327,14 @@ def main():
     try:
         while True:
             status = asoc_rest_api.getStatus(scan_id)
+            sys.stdout.flush()
 
             if status in [u"Ready", u"Failed"]:
                 # os.killpg(os.getpgid(proxy_proc.pid), signal.SIGTERM)
                 # os.killpg(os.getpgid(presence_proc.pid), signal.SIGTERM)
                 print "Scan is complete"
                 asoc_rest_api.getXmlReport(scan_id)
+                sys.stdout.flush()
                 break
             else:
                 sleep(180)
